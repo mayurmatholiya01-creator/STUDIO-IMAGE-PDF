@@ -225,7 +225,7 @@
   },
   {
     "key": "didymasilver|1200x1200x9mm",
-    "expectedImage": "DIDYMA SILVER.jpe"
+    "expectedImage": "DIDYMA SILVER.jpg"
   },
   {
     "key": "dolmenash|1200x1200x9mm",
@@ -533,7 +533,7 @@
   },
   {
     "key": "satvariomercury|1200x1200x9mm",
-    "expectedImage": "STATUARIO MERCURY.jpe"
+    "expectedImage": "STATUARIO MERCURY.jpg"
   },
   {
     "key": "satvariosaintiment|1200x1200x9mm",
