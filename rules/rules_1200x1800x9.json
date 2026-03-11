@@ -253,7 +253,7 @@
   },
   {
     "key": "cardosagrey|1200x1800x9mm",
-    "expectedImage": "CORDOSO GREY.jpeg"
+    "expectedImage": "CORDOSO GREY.jpg"
   },
   {
     "key": "cardosasilver|1200x1800x9mm",
@@ -261,7 +261,7 @@
   },
   {
     "key": "cardosogrey|1200x1800x9mm",
-    "expectedImage": "CORDOSO GREY.jpeg"
+    "expectedImage": "CORDOSO GREY.jpg"
   },
   {
     "key": "cardososilver|1200x1800x9mm",
