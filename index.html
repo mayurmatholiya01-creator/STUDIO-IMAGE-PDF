@@ -449,11 +449,12 @@
             }
         }
 
-        window.addEventListener('DOMContentLoaded', async () => {
-            const savedHandle = await getSavedFolderHandle();
-            if (savedHandle) { updateFolderUI('SAVED_READY'); } 
-            else { updateFolderUI('DEFAULT'); }
-        });
+      window.addEventListener('DOMContentLoaded', async () => {
+    await loadAllRules(); // Rules pehle load honge
+    const savedHandle = await getSavedFolderHandle();
+    if (savedHandle) { updateFolderUI('SAVED_READY'); } 
+    else { updateFolderUI('DEFAULT'); }
+});
 
         // --- UI TOGGLES ---
         function setMode(isAdv) {
