@@ -801,15 +801,15 @@
   },
   {
     "key": "romea|1600x3200x12mm",
-    "expectedImage": "X ROME.jpeg"
+    "expectedImage": "X ROME.jpg"
   },
   {
     "key": "romeb|1600x3200x12mm",
-    "expectedImage": "X ROME.jpeg"
+    "expectedImage": "X ROME.jpg"
   },
   {
     "key": "rosabiancosingleface|1600x3200x12mm",
-    "expectedImage": "ROSA BIANCO.jpeg"
+    "expectedImage": "ROSA BIANCO.jpg"
   },
   {
     "key": "royalblackmarquina|1600x3200x12mm",
