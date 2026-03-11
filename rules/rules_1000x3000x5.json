@@ -1,0 +1,82 @@
+[
+  {
+    "key": "armanidebronze|1000x3000x5mm",
+    "expectedImage": "ARMANI DI BRONZO.jpg"
+  },
+  {
+    "key": "diamantebeige|1000x3000x5mm",
+    "expectedImage": "DIAMANTE BEIGE.jpg"
+  },
+  {
+    "key": "diamantepearl|1000x3000x5mm",
+    "expectedImage": "DIAMANTE PEARL.jpg"
+  },
+  {
+    "key": "feroash|1000x3000x5mm",
+    "expectedImage": "FERO ASH.jpg"
+  },
+  {
+    "key": "kraternero|1000x3000x5mm",
+    "expectedImage": "KRATER NERO.jpg"
+  },
+  {
+    "key": "luxurycementanthracite|1000x3000x5mm",
+    "expectedImage": "LUXURY CEMENT ANTHRACITE.jpg"
+  },
+  {
+    "key": "luxurycementgrey|1000x3000x5mm",
+    "expectedImage": "LUXURY CEMENT GREY.jpg"
+  },
+  {
+    "key": "metropolisalmond|1000x3000x5mm",
+    "expectedImage": "METROPOLIS ALMOND.jpg"
+  },
+  {
+    "key": "pietranero|1000x3000x5mm",
+    "expectedImage": "PIETRA NERO.jpg"
+  },
+  {
+    "key": "rocciaanthacite|1000x3000x5mm",
+    "expectedImage": "ROCCIA BROWN.jpg"
+  },
+  {
+    "key": "rocciabeige|1000x3000x5mm",
+    "expectedImage": "ROCCIA BEIGE.jpg"
+  },
+  {
+    "key": "rocciabrown|1000x3000x5mm",
+    "expectedImage": "ROCCIA BROWN.jpg"
+  },
+  {
+    "key": "rocciacrema|1000x3000x5mm",
+    "expectedImage": "ROCCIA CREMA.jpg"
+  },
+  {
+    "key": "sicilyash|1000x3000x5mm",
+    "expectedImage": "SICILY ASH.jpg"
+  },
+  {
+    "key": "solidblack|1000x3000x5mm",
+    "expectedImage": "SOLID BLACK.jpg"
+  },
+  {
+    "key": "solidwhite|1000x3000x5mm",
+    "expectedImage": "SOLID WHITE.jpg"
+  },
+  {
+    "key": "steelcorten|1000x3000x5mm",
+    "expectedImage": "STEEL CORTEN.jpg"
+  },
+  {
+    "key": "traventinobari|1000x3000x5mm",
+    "expectedImage": "TRAVERTINO BARI.jpg"
+  },
+  {
+    "key": "verbieriron|1000x3000x5mm",
+    "expectedImage": "VERBIER IRON.jpg"
+  },
+  {
+    "key": "verbiersteel|1000x3000x5mm",
+    "expectedImage": "VERBIER STEEL.jpg"
+  }
+]

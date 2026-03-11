@@ -1,0 +1,674 @@
+[
+  {
+    "key": "antisky|1200x1200x9mm",
+    "expectedImage": "ANTISKY.jpg"
+  },
+  {
+    "key": "arabescatooscuro|1200x1200x9mm",
+    "expectedImage": "ARBESCATO OSCURO.jpg"
+  },
+  {
+    "key": "aramanidigris|1200x1200x9mm",
+    "expectedImage": "ARMANI DI GRIS.jpg"
+  },
+  {
+    "key": "arbescatooscuro|1200x1200x9mm",
+    "expectedImage": "ARBESCATO OSCURO.jpg"
+  },
+  {
+    "key": "ardesiachiaro|1200x1200x9mm",
+    "expectedImage": "ARDESIA CHIARO.jpg"
+  },
+  {
+    "key": "ardesianero|1200x1200x9mm",
+    "expectedImage": "ARDESIA NERO.jpg"
+  },
+  {
+    "key": "ardesiascuro|1200x1200x9mm",
+    "expectedImage": "ARDESIA SCURO.jpg"
+  },
+  {
+    "key": "armanibianco|1200x1200x9mm",
+    "expectedImage": "ARMANI BIANCO.jpg"
+  },
+  {
+    "key": "armanicrema|1200x1200x9mm",
+    "expectedImage": "ARMANI CREMA.jpg"
+  },
+  {
+    "key": "armanidibronzo|1200x1200x9mm",
+    "expectedImage": "ARMANI DI BRONZO.jpg"
+  },
+  {
+    "key": "armanidigrigio|1200x1200x9mm",
+    "expectedImage": "ARMANI GRIGIO.jpg"
+  },
+  {
+    "key": "armanidigris|1200x1200x9mm",
+    "expectedImage": "ARMANI DI GRIS.jpg"
+  },
+  {
+    "key": "armanigrey|1200x1200x9mm",
+    "expectedImage": "ARMANI GREY.jpg"
+  },
+  {
+    "key": "avenuegrey|1200x1200x9mm",
+    "expectedImage": "AVENUE GREY.jpg"
+  },
+  {
+    "key": "barlettacrema|1200x1200x9mm",
+    "expectedImage": "BARLETTA CREMA.jpg"
+  },
+  {
+    "key": "beldiabianco|1200x1200x9mm",
+    "expectedImage": "BELDIA BIANCO.jpg"
+  },
+  {
+    "key": "beldiabianco|1200x1200x9mm",
+    "expectedImage": "BELDIA BIANCO.jpg"
+  },
+  {
+    "key": "bethalbianco|1200x1200x9mm",
+    "expectedImage": "BETHEL BIANCO.jpg"
+  },
+  {
+    "key": "bethelbianco|1200x1200x9mm",
+    "expectedImage": "BETHEL BIANCO.jpg"
+  },
+  {
+    "key": "betonflakesgrey|1200x1200x9mm",
+    "expectedImage": "BETON FLAKE GREY.jpg"
+  },
+  {
+    "key": "bianca|1200x1200x9mm",
+    "expectedImage": "BIANCA.jpg"
+  },
+  {
+    "key": "biancaflore|1200x1200x9mm",
+    "expectedImage": "BIANCA FIORE.jpg"
+  },
+  {
+    "key": "botticinoflorito|1200x1200x9mm",
+    "expectedImage": "BOTTICINO FIORITO.jpg"
+  },
+  {
+    "key": "brecciapernice|1200x1200x9mm",
+    "expectedImage": "BRECCIA PERNICE.jpg"
+  },
+  {
+    "key": "brechacrema|1200x1200x9mm",
+    "expectedImage": "BRECHA CREMA.jpg"
+  },
+  {
+    "key": "brightongold|1200x1200x9mm",
+    "expectedImage": "Brighton Gold.jpg"
+  },
+  {
+    "key": "brightongrey|1200x1200x9mm",
+    "expectedImage": "Brighton Grey.jpg"
+  },
+  {
+    "key": "brillerash|1200x1200x9mm",
+    "expectedImage": "BRILLER ASH.jpg"
+  },
+  {
+    "key": "brillercrema|1200x1200x9mm",
+    "expectedImage": "BRILLER CREMA.jpg"
+  },
+  {
+    "key": "brillergris|1200x1200x9mm",
+    "expectedImage": "BRILLER GRIS.jpg"
+  },
+  {
+    "key": "calacataborghini|1200x1200x9mm",
+    "expectedImage": "CALACUTTA BORGHINI.jpg"
+  },
+  {
+    "key": "calacattaborghini|1200x1200x9mm",
+    "expectedImage": "CALACUTTA BORGHINI.jpg"
+  },
+  {
+    "key": "calacattadelicato|1200x1200x9mm",
+    "expectedImage": "CALACATTA DELICATO.jpg"
+  },
+  {
+    "key": "calcuttamarblewhite|1200x1200x9mm",
+    "expectedImage": "CALCUTTA MARBLE WHITE.jpg"
+  },
+  {
+    "key": "candleonxy|1200x1200x9mm",
+    "expectedImage": "CANDLE ONYX.jpg"
+  },
+  {
+    "key": "candleonyx|1200x1200x9mm",
+    "expectedImage": "CANDLE ONYX.jpg"
+  },
+  {
+    "key": "castellocoin|1200x1200x9mm",
+    "expectedImage": "CASTELLO COIN.jpg"
+  },
+  {
+    "key": "cementoflakes|1200x1200x9mm",
+    "expectedImage": "CEMENTO FLAKES.jpg"
+  },
+  {
+    "key": "cipllinowhite|1200x1200x9mm",
+    "expectedImage": "CIPLLINO WHITE.jpg"
+  },
+  {
+    "key": "clotsatvario|1200x1200x9mm",
+    "expectedImage": "CLOT SATVARIO.jpg"
+  },
+  {
+    "key": "cloudylight|1200x1200x9mm",
+    "expectedImage": "CLOUDY LIGHT.jpg"
+  },
+  {
+    "key": "cloudyonyxverde|1200x1200x9mm",
+    "expectedImage": "CLOUDY ONYX VERDE.jpg"
+  },
+  {
+    "key": "coaldark|1200x1200x9mm",
+    "expectedImage": "COAL DARK.jpg"
+  },
+  {
+    "key": "coallight|1200x1200x9mm",
+    "expectedImage": "COAL LIGHT.jpg"
+  },
+  {
+    "key": "cosenzaaersenic|1200x1200x9mm",
+    "expectedImage": "COSENZA ARSENIC.jpg"
+  },
+  {
+    "key": "cosenzaarsenic|1200x1200x9mm",
+    "expectedImage": "COSENZA ARSENIC.jpg"
+  },
+  {
+    "key": "cracklebianco|1200x1200x9mm",
+    "expectedImage": "CRACKLE BIANCO.jpg"
+  },
+  {
+    "key": "cracklechoco|1200x1200x9mm",
+    "expectedImage": "CRACKLE CHOCO.jpg"
+  },
+  {
+    "key": "cremodelicato|1200x1200x9mm",
+    "expectedImage": "CREMO DELICATO.jpg"
+  },
+  {
+    "key": "daytongrey|1200x1200x9mm",
+    "expectedImage": "DAYTON GREY.jpg"
+  },
+  {
+    "key": "daytonnatural|1200x1200x9mm",
+    "expectedImage": "DAYTON NATURAL.jpg"
+  },
+  {
+    "key": "diamantebrown|1200x1200x9mm",
+    "expectedImage": "DIAMANTE BROWN.jpg"
+  },
+  {
+    "key": "diamantegrey|1200x1200x9mm",
+    "expectedImage": "DIAMANTE GREY.jpg"
+  },
+  {
+    "key": "diamantemud|1200x1200x9mm",
+    "expectedImage": "DIAMANTE MUD.jpg"
+  },
+  {
+    "key": "diamantepearl|1200x1200x9mm",
+    "expectedImage": "DIAMANTE PEARL.jpg"
+  },
+  {
+    "key": "diamantesmoke|1200x1200x9mm",
+    "expectedImage": "DIAMANTE SMOKE.jpg"
+  },
+  {
+    "key": "didymasilver|1200x1200x9mm",
+    "expectedImage": "DIDYMA SILVER.jpeg"
+  },
+  {
+    "key": "dolmenash|1200x1200x9mm",
+    "expectedImage": "DOLMEN ASH.jpg"
+  },
+  {
+    "key": "dolmengris|1200x1200x9mm",
+    "expectedImage": "DOLMEN GRIS.jpg"
+  },
+  {
+    "key": "dolmenivory|1200x1200x9mm",
+    "expectedImage": "DOLMEN IVORY.jpg"
+  },
+  {
+    "key": "durangoash|1200x1200x9mm",
+    "expectedImage": "DURANGO ASH.jpg"
+  },
+  {
+    "key": "durangocrema|1200x1200x9mm",
+    "expectedImage": "DURANGO CREMA.jpg"
+  },
+  {
+    "key": "durangogrey|1200x1200x9mm",
+    "expectedImage": "DURANGO GREY.jpg"
+  },
+  {
+    "key": "durangoivory|1200x1200x9mm",
+    "expectedImage": "DURANGO IVORY.jpg"
+  },
+  {
+    "key": "escorialgrey|1200x1200x9mm",
+    "expectedImage": "ESCORIAL GREY.jpg"
+  },
+  {
+    "key": "everestwhite|1200x1200x9mm",
+    "expectedImage": "PLAIN WHITE.jpg"
+  },
+  {
+    "key": "filettoclassico|1200x1200x9mm",
+    "expectedImage": "FILETTO CLASSICO.jpg"
+  },
+  {
+    "key": "flintgrey|1200x1200x9mm",
+    "expectedImage": "FLINT GREY.jpg"
+  },
+  {
+    "key": "glacierwhite|1200x1200x9mm",
+    "expectedImage": "GLACIER WHITE.jpg"
+  },
+  {
+    "key": "imperialgray|1200x1200x9mm",
+    "expectedImage": "IMPERIAL GRAY.jpg"
+  },
+  {
+    "key": "irisgrey|1200x1200x9mm",
+    "expectedImage": "IRIS GREY.jpg"
+  },
+  {
+    "key": "konebeige|1200x1200x9mm",
+    "expectedImage": "KONE BIEGE.jpg"
+  },
+  {
+    "key": "kraterceppo|1200x1200x9mm",
+    "expectedImage": "KRATER CEPPO.jpg"
+  },
+  {
+    "key": "kraterperla|1200x1200x9mm",
+    "expectedImage": "KRATER PERLA.jpg"
+  },
+  {
+    "key": "labronblue|1200x1200x9mm",
+    "expectedImage": "LEMURIAN BLUE.jpg"
+  },
+  {
+    "key": "lagobeige|1200x1200x9mm",
+    "expectedImage": "LAGO BEIGE.jpg"
+  },
+  {
+    "key": "leanderbianco|1200x1200x9mm",
+    "expectedImage": "LEANDER BIANCO.jpg"
+  },
+  {
+    "key": "leanderivory|1200x1200x9mm",
+    "expectedImage": "LEANDER IVORY.jpg"
+  },
+  {
+    "key": "lemurianblue|1200x1200x9mm",
+    "expectedImage": "LEMURIAN BLUE.jpg"
+  },
+  {
+    "key": "lewistongrey|1200x1200x9mm",
+    "expectedImage": "LEWISTON GREY.jpg"
+  },
+  {
+    "key": "libertyblanco|1200x1200x9mm",
+    "expectedImage": "LIBERTY BLANCO.jpg"
+  },
+  {
+    "key": "lineastonecrema|1200x1200x9mm",
+    "expectedImage": "LINEA STONE CREMA.jpg"
+  },
+  {
+    "key": "lombardybeige|1200x1200x9mm",
+    "expectedImage": "LOMBARDY BEIGE.jpg"
+  },
+  {
+    "key": "luthorgrey|1200x1200x9mm",
+    "expectedImage": "LUTHOR GREY.jpg"
+  },
+  {
+    "key": "magmagold|1200x1200x9mm",
+    "expectedImage": "MARMOL GOLD.jpg"
+  },
+  {
+    "key": "majestuosogrey|1200x1200x9mm",
+    "expectedImage": "MAJESTUOSO GREY.jpg"
+  },
+  {
+    "key": "maltabeige|1200x1200x9mm",
+    "expectedImage": "MALTA BEIGE.jpg"
+  },
+  {
+    "key": "manhattanwhite|1200x1200x9mm",
+    "expectedImage": "MANHATTAN WHITE.jpg"
+  },
+  {
+    "key": "marmolbianco|1200x1200x9mm",
+    "expectedImage": "MARMOL BIANCO.jpg"
+  },
+  {
+    "key": "marmolblanco|1200x1200x9mm",
+    "expectedImage": "MARMOL BIANCO.jpg"
+  },
+  {
+    "key": "marmolgold|1200x1200x9mm",
+    "expectedImage": "MARMOL GOLD.jpg"
+  },
+  {
+    "key": "marmolgrey|1200x1200x9mm",
+    "expectedImage": "MARMOL GRAY.jpg"
+  },
+  {
+    "key": "marquinaolpse|1200x1200x9mm",
+    "expectedImage": "MARKINA OLSPE.jpg"
+  },
+  {
+    "key": "marquinaolspe|1200x1200x9mm",
+    "expectedImage": "MARKINA OLSPE.jpg"
+  },
+  {
+    "key": "metalynbeige|1200x1200x9mm",
+    "expectedImage": "METALYN BEIGE.jpg"
+  },
+  {
+    "key": "milaangray|1200x1200x9mm",
+    "expectedImage": "MILAAN GREY.jpg"
+  },
+  {
+    "key": "milanogray|1200x1200x9mm",
+    "expectedImage": "MILANO GRAY.jpg"
+  },
+  {
+    "key": "mocchevanigia|1200x1200x9mm",
+    "expectedImage": "MOCCHE VANIGLIA.jpg"
+  },
+  {
+    "key": "mocchevaniglia|1200x1200x9mm",
+    "expectedImage": "MOCCHE VANIGLIA.jpg"
+  },
+  {
+    "key": "montenchiocrema|1200x1200x9mm",
+    "expectedImage": "MONTENCHIO CREMA.jpg"
+  },
+  {
+    "key": "montenchiogrey|1200x1200x9mm",
+    "expectedImage": "MONTENCHIO GREY.jpg"
+  },
+  {
+    "key": "moononxywhite|1200x1200x9mm",
+    "expectedImage": "MOON WHITE ONYX.jpg"
+  },
+  {
+    "key": "nievebianco|1200x1200x9mm",
+    "expectedImage": "NIEVE BLANCO.jpg"
+  },
+  {
+    "key": "nieveblanco|1200x1200x9mm",
+    "expectedImage": "NIEVE BLANCO.jpg"
+  },
+  {
+    "key": "nofarbeige|1200x1200x9mm",
+    "expectedImage": "NOFAR BEIGE.jpg"
+  },
+  {
+    "key": "nofargray|1200x1200x9mm",
+    "expectedImage": "NOFAR GRAY.jpg"
+  },
+  {
+    "key": "nordlightgrey|1200x1200x9mm",
+    "expectedImage": "NORD LIGHT GREY.jpg"
+  },
+  {
+    "key": "nordverde|1200x1200x9mm",
+    "expectedImage": "NORD VERDE.jpg"
+  },
+  {
+    "key": "omani|1200x1200x9mm",
+    "expectedImage": "OMANI.jpg"
+  },
+  {
+    "key": "onyxbianco|1200x1200x9mm",
+    "expectedImage": "ONYX BIANCO.jpg"
+  },
+  {
+    "key": "opalbianco|1200x1200x9mm",
+    "expectedImage": "OPAL BIANCO.jpg"
+  },
+  {
+    "key": "ostrabianco|1200x1200x9mm",
+    "expectedImage": "OSTRA BIANCO.jpg"
+  },
+  {
+    "key": "patagonoabianco|1200x1200x9mm",
+    "expectedImage": "PATAGONOA BIANCO.jpg"
+  },
+  {
+    "key": "perlino|1200x1200x9mm",
+    "expectedImage": "PERLINO.jpg"
+  },
+  {
+    "key": "piacenzawhite|1200x1200x9mm",
+    "expectedImage": "PIACENZA WHITE.jpg"
+  },
+  {
+    "key": "pietradivalsash|1200x1200x9mm",
+    "expectedImage": "PIETRA DI VALS ASH.jpg"
+  },
+  {
+    "key": "pietradivalsgrigio|1200x1200x9mm",
+    "expectedImage": "PIETRA DI VALS GRIGIO.jpg"
+  },
+  {
+    "key": "pietradivalsscuro|1200x1200x9mm",
+    "expectedImage": "PIETRA DI VALS SCURO.jpg"
+  },
+  {
+    "key": "pietragrigio|1200x1200x9mm",
+    "expectedImage": "PIETRA DI VALS GRIGIO.jpg"
+  },
+  {
+    "key": "pizzoribianco|1200x1200x9mm",
+    "expectedImage": "PIZZORI BIANCO.jpg"
+  },
+  {
+    "key": "pizzoriwhite|1200x1200x9mm",
+    "expectedImage": "PIZZORI WHITE.jpg"
+  },
+  {
+    "key": "placenzawhite|1200x1200x9mm",
+    "expectedImage": "PIACENZA WHITE.jpg"
+  },
+  {
+    "key": "plainwhite|1200x1200x9mm",
+    "expectedImage": "PLAIN WHITE.jpg"
+  },
+  {
+    "key": "plexusbianco|1200x1200x9mm",
+    "expectedImage": "PLEXUS BIANCO.jpg"
+  },
+  {
+    "key": "quiossilver|1200x1200x9mm",
+    "expectedImage": "QUIOS SILVER.jpg"
+  },
+  {
+    "key": "resinmiragebeige|1200x1200x9mm",
+    "expectedImage": "RESIN MIRAGE BEIGE.jpg"
+  },
+  {
+    "key": "resinmiragerust|1200x1200x9mm",
+    "expectedImage": "RESIN MIRAGE RUST.jpg"
+  },
+  {
+    "key": "resinmiragesand|1200x1200x9mm",
+    "expectedImage": "RESIN MIRAGE SAND.jpg"
+  },
+  {
+    "key": "resinmiragescuro|1200x1200x9mm",
+    "expectedImage": "RESIN MIRAGE SCURO.jpg"
+  },
+  {
+    "key": "rumitravertino|1200x1200x9mm",
+    "expectedImage": "RUMI TRAVERTINO.jpg"
+  },
+  {
+    "key": "sandecrema|1200x1200x9mm",
+    "expectedImage": "Sande Crema.jpg"
+  },
+  {
+    "key": "sandegrey|1200x1200x9mm",
+    "expectedImage": "Sande Grey.jpg"
+  },
+  {
+    "key": "sandeivory|1200x1200x9mm",
+    "expectedImage": "Sande Ivory.jpg"
+  },
+  {
+    "key": "satvariomercury|1200x1200x9mm",
+    "expectedImage": "STATUARIO MERCURY.jpeg"
+  },
+  {
+    "key": "satvariosaintiment|1200x1200x9mm",
+    "expectedImage": "SATVARIO SANTIMENT.jpg"
+  },
+  {
+    "key": "shirazgold|1200x1200x9mm",
+    "expectedImage": "SHIRAZ GOLD.jpg"
+  },
+  {
+    "key": "siciliaivory|1200x1200x9mm",
+    "expectedImage": "SICILIYA IVORY.jpg"
+  },
+  {
+    "key": "siciliyaivory|1200x1200x9mm",
+    "expectedImage": "SICILIYA IVORY.jpg"
+  },
+  {
+    "key": "sicilyash|1200x1200x9mm",
+    "expectedImage": "SICILY ASH.jpg"
+  },
+  {
+    "key": "sicilygrey|1200x1200x9mm",
+    "expectedImage": "SICILY GREY.jpg"
+  },
+  {
+    "key": "sicilynatural|1200x1200x9mm",
+    "expectedImage": "SICILY NATURAL.jpg"
+  },
+  {
+    "key": "sicilynature|1200x1200x9mm",
+    "expectedImage": "SICILY NATURAL.jpg"
+  },
+  {
+    "key": "sicilyscuro|1200x1200x9mm",
+    "expectedImage": "SICILY SCURO.jpg"
+  },
+  {
+    "key": "sicilyscuroash|1200x1200x9mm",
+    "expectedImage": "SICILY ASH.jpg"
+  },
+  {
+    "key": "sierracrema|1200x1200x9mm",
+    "expectedImage": "SIERRA CREMA.jpg"
+  },
+  {
+    "key": "sivocwhite|1200x1200x9mm",
+    "expectedImage": "SIVOC WHITE.jpg"
+  },
+  {
+    "key": "smichivory|1200x1200x9mm",
+    "expectedImage": "SMICH IVORY.jpg"
+  },
+  {
+    "key": "solanobluehome|1200x1200x9mm",
+    "expectedImage": "SOLANO BLUE HOME.jpg"
+  },
+  {
+    "key": "spiderbottochino|1200x1200x9mm",
+    "expectedImage": "SPIDER BOTTOCHINO.jpg"
+  },
+  {
+    "key": "statuariomercury|1200x1200x9mm",
+    "expectedImage": "STATUARIO MERCURY.jpg"
+  },
+  {
+    "key": "statuarioplatina|1200x1200x9mm",
+    "expectedImage": "STATUARIO PLATINA.jpg"
+  },
+  {
+    "key": "statuariosantiment|1200x1200x9mm",
+    "expectedImage": "SATVARIO SANTIMENT.jpg"
+  },
+  {
+    "key": "superbianco|1200x1200x9mm",
+    "expectedImage": "SUPER BIANCO.jpg"
+  },
+  {
+    "key": "terastoneliam|1200x1200x9mm",
+    "expectedImage": "TERRA STONE LIGHT.jpg"
+  },
+  {
+    "key": "terrastonecrema|1200x1200x9mm",
+    "expectedImage": "TERRA STONE CREMA.jpg"
+  },
+  {
+    "key": "terrastonegrey|1200x1200x9mm",
+    "expectedImage": "TERRA STONE GREY.jpg"
+  },
+  {
+    "key": "terrastonelight|1200x1200x9mm",
+    "expectedImage": "TERRA STONE LIGHT.jpg"
+  },
+  {
+    "key": "terrastonecrema|1200x1200x9mm",
+    "expectedImage": "TERRA STONE CREMA.jpg"
+  },
+  {
+    "key": "terrastonegrey|1200x1200x9mm",
+    "expectedImage": "TERRA STONE GREY.jpg"
+  },
+  {
+    "key": "touchwoodsmoke|1200x1200x9mm",
+    "expectedImage": "TOUCH WOOD SMOKE.jpg"
+  },
+  {
+    "key": "tundragris|1200x1200x9mm",
+    "expectedImage": "TUNDRA GRIS.jpg"
+  },
+  {
+    "key": "valentino|1200x1200x9mm",
+    "expectedImage": "valentino.jpg"
+  },
+  {
+    "key": "varsacegrey|1200x1200x9mm",
+    "expectedImage": "VERSACE GRAY.jpg"
+  },
+  {
+    "key": "velentino|1200x1200x9mm",
+    "expectedImage": "valentino.jpg"
+  },
+  {
+    "key": "versacegray|1200x1200x9mm",
+    "expectedImage": "VERSACE GRAY.jpg"
+  },
+  {
+    "key": "victoria|1200x1200x9mm",
+    "expectedImage": "VICTORIA.jpg"
+  },
+  {
+    "key": "yacoratobianco|1200x1200x9mm",
+    "expectedImage": "YACORATO BIANCO.jpg"
+  },
+  {
+    "key": "yashiwhite|1200x1200x9mm",
+    "expectedImage": "YASHI WHITE.jpg"
+  }
+]

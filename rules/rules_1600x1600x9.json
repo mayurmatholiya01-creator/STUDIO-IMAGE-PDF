@@ -1,0 +1,98 @@
+[
+  {
+    "key": "armanibianco|1600x1600x9mm",
+    "expectedImage": "ARMANI BIANCO.jpg"
+  },
+  {
+    "key": "armanidigris|1600x1600x9mm",
+    "expectedImage": "ARMANI DI GRIS.jpg"
+  },
+  {
+    "key": "armanidiperla|1600x1600x9mm",
+    "expectedImage": "ARMANI DI PERLA.jpg"
+  },
+  {
+    "key": "armanigrey|1600x1600x9mm",
+    "expectedImage": "ARMANI GRAY.jpg"
+  },
+  {
+    "key": "bottochinoclassico|1600x1600x9mm",
+    "expectedImage": "BOTTOCHINO CLASSICO.jpg"
+  },
+  {
+    "key": "daytonash|1600x1600x9mm",
+    "expectedImage": "DAYTON ASH.jpg"
+  },
+  {
+    "key": "daytonnatural|1600x1600x9mm",
+    "expectedImage": "DAYTON NATURAL.jpg"
+  },
+  {
+    "key": "didymasilver|1600x1600x9mm",
+    "expectedImage": "DIDYMA SILVER.jpg"
+  },
+  {
+    "key": "imperialgrey|1600x1600x9mm",
+    "expectedImage": "IMPERIAL GRAY.jpg"
+  },
+  {
+    "key": "kraterceppo|1600x1600x9mm",
+    "expectedImage": "KRATER CEPPO.jpg"
+  },
+  {
+    "key": "kraternero|1600x1600x9mm",
+    "expectedImage": "KRATER NERO.jpg"
+  },
+  {
+    "key": "kraterperla|1600x1600x9mm",
+    "expectedImage": "KRATER PERLA.jpg"
+  },
+  {
+    "key": "limestonecrema|1600x1600x9mm",
+    "expectedImage": "LIMESTONE CREMA.jpg"
+  },
+  {
+    "key": "malagagray|1600x1600x9mm",
+    "expectedImage": "MALAGA GRAY.jpg"
+  },
+  {
+    "key": "manhattanwhite|1600x1600x9mm",
+    "expectedImage": "MANHATTAN WHITE.jpg"
+  },
+  {
+    "key": "nofarbeige|1600x1600x9mm",
+    "expectedImage": "NOFAR BEIGE.jpeg"
+  },
+  {
+    "key": "nofargrey|1600x1600x9mm",
+    "expectedImage": "NOFAR GRAY.jpg"
+  },
+  {
+    "key": "royalgreywilliam|1600x1600x9mm",
+    "expectedImage": "ROYAL GREY WILLIAM.jpg"
+  },
+  {
+    "key": "spiderbottochino|1600x1600x9mm",
+    "expectedImage": "SPIDER BOTTOCHINO.jpg"
+  },
+  {
+    "key": "statuarioelegant|1600x1600x9mm",
+    "expectedImage": "STATUARIO ELEGANT.jpg"
+  },
+  {
+    "key": "stormgray|1600x1600x9mm",
+    "expectedImage": "STORM GREY.jpg"
+  },
+  {
+    "key": "versacegrey|1600x1600x9mm",
+    "expectedImage": "VERSACE GREY.jpeg"
+  },
+  {
+    "key": "vitrumgrigio|1600x1600x9mm",
+    "expectedImage": "VITRUM GRIGIO.jpg"
+  },
+  {
+    "key": "yashiwhite|1600x1600x9mm",
+    "expectedImage": "YASHI WHITE.jpg"
+  }
+]

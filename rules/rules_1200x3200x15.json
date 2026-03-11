@@ -1,0 +1,46 @@
+[
+  {
+    "key": "delicato|1200x3200x15mm",
+    "expectedImage": "DELICATO.jpg"
+  },
+  {
+    "key": "jasperjade|1200x3200x15mm",
+    "expectedImage": "JASPER JADE.jpg"
+  },
+  {
+    "key": "lemirianblue|1200x3200x15mm",
+    "expectedImage": "LEMURIAN BLUE.jpg"
+  },
+  {
+    "key": "lemurianblue|1200x3200x15mm",
+    "expectedImage": "LEMURIAN BLUE.jpg"
+  },
+  {
+    "key": "operaonxyverde|1200x3200x15mm",
+    "expectedImage": "X OPERA ONYX VERDE.jpg"
+  },
+  {
+    "key": "operaonxyverdeb|1200x3200x15mm",
+    "expectedImage": "X OPERA ONYX VERDE.jpg"
+  },
+  {
+    "key": "operaonxyverdea|1200x3200x15mm",
+    "expectedImage": "X OPERA ONYX VERDE.jpg"
+  },
+  {
+    "key": "operaonxyverdeb|1200x3200x15mm",
+    "expectedImage": "X OPERA ONYX VERDE.jpg"
+  },
+  {
+    "key": "operaonyxverde|1200x3200x15mm",
+    "expectedImage": "X OPERA ONYX VERDE.jpg"
+  },
+  {
+    "key": "smogyazul|1200x3200x15mm",
+    "expectedImage": "SMOGY AZUL.jpg"
+  },
+  {
+    "key": "smozyazul|1200x3200x15mm",
+    "expectedImage": "SMOGY AZUL.jpg"
+  }
+]

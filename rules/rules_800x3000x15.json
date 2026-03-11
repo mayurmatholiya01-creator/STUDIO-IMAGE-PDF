@@ -1,0 +1,222 @@
+[
+  {
+    "key": "ashgrey|800x3000x15mm",
+    "expectedImage": "MONO ASH GREY.jpg"
+  },
+  {
+    "key": "biancafiore|800x3000x15mm",
+    "expectedImage": "BIANCA FIORE.jpg"
+  },
+  {
+    "key": "black|800x3000x15mm",
+    "expectedImage": "MONO BLACK.jpg"
+  },
+  {
+    "key": "calacattaluna|800x3000x15mm",
+    "expectedImage": "CALACATTA LUNA.jpg"
+  },
+  {
+    "key": "eclipsblack|800x3000x15mm",
+    "expectedImage": "ECLIPSE BLACK.jpg"
+  },
+  {
+    "key": "goldenportoro|800x3000x15mm",
+    "expectedImage": "GOLDEN PORTORO.jpg"
+  },
+  {
+    "key": "grey|800x3000x15mm",
+    "expectedImage": "MONO GREY.jpg"
+  },
+  {
+    "key": "islayblackpolish|800x3000x15mm",
+    "expectedImage": "SEPOS NERO.jpg"
+  },
+  {
+    "key": "islaybrown|800x3000x15mm",
+    "expectedImage": "SEPOS TRIGO.jpg"
+  },
+  {
+    "key": "islaygrey|800x3000x15mm",
+    "expectedImage": "SEPOS GRIS.jpg"
+  },
+  {
+    "key": "jetblack|800x3000x15mm",
+    "expectedImage": "MONO ZED BLACK .jpg"
+  },
+  {
+    "key": "mbrown|800x3000x15mm",
+    "expectedImage": "MONO BROWN.jpg"
+  },
+  {
+    "key": "magmagold|800x3000x15mm",
+    "expectedImage": "MAGMA GOLD.jpg"
+  },
+  {
+    "key": "markinaolspe|800x3000x15mm",
+    "expectedImage": "MARKINA OLSPE.jpg"
+  },
+  {
+    "key": "monoashgrey|800x3000x15mm",
+    "expectedImage": "MONO ASH GREY.jpg"
+  },
+  {
+    "key": "monobrown|800x3000x15mm",
+    "expectedImage": "MONO BROWN.jpg"
+  },
+  {
+    "key": "monogrey|800x3000x15mm",
+    "expectedImage": "MONO GREY.jpg"
+  },
+  {
+    "key": "monokota|800x3000x15mm",
+    "expectedImage": "MONO KOTTO.jpg"
+  },
+  {
+    "key": "monoverde|800x3000x15mm",
+    "expectedImage": "MONO VERDE.jpg"
+  },
+  {
+    "key": "monowhite|800x3000x15mm",
+    "expectedImage": "MONO WHITE.jpg"
+  },
+  {
+    "key": "nblack|800x3000x15mm",
+    "expectedImage": "MONO BLACK.jpg"
+  },
+  {
+    "key": "noirseprents|800x3000x15mm",
+    "expectedImage": "NOIR SERPENTS.jpg"
+  },
+  {
+    "key": "quartazitewhite|800x3000x15mm",
+    "expectedImage": "QUARTZITE WHITE.jpg"
+  },
+  {
+    "key": "royalblackmarquina|800x3000x15mm",
+    "expectedImage": "ROYAL BLACK MARQUINA.jpg"
+  },
+  {
+    "key": "satvarioreale|800x3000x15mm",
+    "expectedImage": "STATUARIO REALE.jpg"
+  },
+  {
+    "key": "seposchalk|800x3000x15mm",
+    "expectedImage": "SEPOS CHALK.jpg"
+  },
+  {
+    "key": "seposgris|800x3000x15mm",
+    "expectedImage": "SEPOS GRIS.jpg"
+  },
+  {
+    "key": "seposnero|800x3000x15mm",
+    "expectedImage": "SEPOS NERO.jpg"
+  },
+  {
+    "key": "sepostrigo|800x3000x15mm",
+    "expectedImage": "SEPOS TRIGO.jpg"
+  },
+  {
+    "key": "seposwhite|800x3000x15mm",
+    "expectedImage": "SEPOS WHITE.jpg"
+  },
+  {
+    "key": "sparklenero|800x3000x15mm",
+    "expectedImage": "SPARKLE NERO.jpg"
+  },
+  {
+    "key": "sparklewhite|800x3000x15mm",
+    "expectedImage": "SPARKLE WHITE.jpg"
+  },
+  {
+    "key": "stavarioregal|800x3000x15mm",
+    "expectedImage": "STATUARIO REALE.jpg"
+  },
+  {
+    "key": "superwhite|800x3000x15mm",
+    "expectedImage": "SUPER WHITE.jpg"
+  },
+  {
+    "key": "zedblack|800x3000x15mm",
+    "expectedImage": "ZED BLACK.jpg"
+  },
+  {
+    "key": "africanebony|800x3000x15mm",
+    "expectedImage": "AFRICAN EBONY.jpg"
+  },
+  {
+    "key": "ashgrey|800x3000x15mm",
+    "expectedImage": "MONO ASH GREY.jpg"
+  },
+  {
+    "key": "brown|800x3000x15mm",
+    "expectedImage": "MONO BROWN.jpg"
+  },
+  {
+    "key": "crystalwhite|800x3000x15mm",
+    "expectedImage": "CRYSTAL WHITE.jpg"
+  },
+  {
+    "key": "eclipseblack|800x3000x15mm",
+    "expectedImage": "ECLIPSE BLACK.jpg"
+  },
+  {
+    "key": "islaybrownsepostrigo|800x3000x15mm",
+    "expectedImage": "SEPOS TRIGO.jpg"
+  },
+  {
+    "key": "islaybrownsepostrigo|800x3000x15mm",
+    "expectedImage": "SEPOS TRIGO.jpg"
+  },
+  {
+    "key": "islaygreyseposgris|800x3000x15mm",
+    "expectedImage": "SEPOS GRIS.jpg"
+  },
+  {
+    "key": "mangagold|800x3000x15mm",
+    "expectedImage": "MAGMA GOLD.jpg"
+  },
+  {
+    "key": "markinaolpse|800x3000x15mm",
+    "expectedImage": "MARKINA OLSPE.jpg"
+  },
+  {
+    "key": "monoblack|800x3000x15mm",
+    "expectedImage": "MONO BLACK.jpg"
+  },
+  {
+    "key": "nblack|800x3000x15mm",
+    "expectedImage": "MONO BLACK.jpg"
+  },
+  {
+    "key": "noirserpents|800x3000x15mm",
+    "expectedImage": "NOIR SERPENTS.jpg"
+  },
+  {
+    "key": "noirserprnts|800x3000x15mm",
+    "expectedImage": "NOIR SERPENTS.jpg"
+  },
+  {
+    "key": "quartazitechoco|800x3000x15mm",
+    "expectedImage": "QUARTZITE CHOCO.jpg"
+  },
+  {
+    "key": "quartzitechoco|800x3000x15mm",
+    "expectedImage": "QUARTZITE CHOCO.jpg"
+  },
+  {
+    "key": "quartzitewhite|800x3000x15mm",
+    "expectedImage": "QUARTZITE WHITE.jpg"
+  },
+  {
+    "key": "statuarioreale|800x3000x15mm",
+    "expectedImage": "STATUARIO REALE.jpg"
+  },
+  {
+    "key": "staturioreale|800x3000x15mm",
+    "expectedImage": "STATUARIO REALE.jpg"
+  },
+  {
+    "key": "titaniumgold|800x3000x15mm",
+    "expectedImage": "TITANIUM GOLD.jpg"
+  }
+]

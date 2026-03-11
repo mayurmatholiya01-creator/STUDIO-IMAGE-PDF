@@ -1,0 +1,130 @@
+[
+  {
+    "key": "armanidigris|1200x3200x12mm",
+    "expectedImage": "ARMANI DI GRIS.jpg"
+  },
+  {
+    "key": "athensgrey|1200x3200x12mm",
+    "expectedImage": "ATHENS GREY.jpg"
+  },
+  {
+    "key": "athensslate|1200x3200x12mm",
+    "expectedImage": "ATHENS SLATE.jpg"
+  },
+  {
+    "key": "blackpanda|1200x3200x12mm",
+    "expectedImage": "BLACK PANDA.jpg"
+  },
+  {
+    "key": "calacattablack|1200x3200x12mm",
+    "expectedImage": "CALACATTA BLACK.jpg"
+  },
+  {
+    "key": "calcuttablack|1200x3200x12mm",
+    "expectedImage": "CALACATTA BLACK.jpg"
+  },
+  {
+    "key": "contextbeige|1200x3200x12mm",
+    "expectedImage": "CONTEXT BEIGE.jpg"
+  },
+  {
+    "key": "contextgrey|1200x3200x12mm",
+    "expectedImage": "CONTEXT GREY.jpg"
+  },
+  {
+    "key": "contextnatural|1200x3200x12mm",
+    "expectedImage": "CONTEXT NATURAL.jpg"
+  },
+  {
+    "key": "delicatogolda|1200x3200x12mm",
+    "expectedImage": "X DELICATO GOLD.jpg"
+  },
+  {
+    "key": "delicatogoldb|1200x3200x12mm",
+    "expectedImage": "X DELICATO GOLD.jpg"
+  },
+  {
+    "key": "delicatoa|1200x3200x12mm",
+    "expectedImage": "X DELICATO.jpg"
+  },
+  {
+    "key": "delicatob|1200x3200x12mm",
+    "expectedImage": "X DELICATO.jpg"
+  },
+  {
+    "key": "diamantesmoke|1200x3200x12mm",
+    "expectedImage": "DIAMANTE SMOKE.jpg"
+  },
+  {
+    "key": "manhattanwhite|1200x3200x12mm",
+    "expectedImage": "MANHATTAN WHITE.jpg"
+  },
+  {
+    "key": "massimoarabescatoa|1200x3200x12mm",
+    "expectedImage": "X MASSIMO ARABESCATO.jpg"
+  },
+  {
+    "key": "massimoarabescatob|1200x3200x12mm",
+    "expectedImage": "X MASSIMO ARABESCATO.jpg"
+  },
+  {
+    "key": "onyxoracle|1200x3200x12mm",
+    "expectedImage": "X ONYX ORACLE.jpg"
+  },
+  {
+    "key": "onyxoraclea|1200x3200x12mm",
+    "expectedImage": "X ONYX ORACLE.jpg"
+  },
+  {
+    "key": "onyxoracleb|1200x3200x12mm",
+    "expectedImage": "X ONYX ORACLE.jpg"
+  },
+  {
+    "key": "pallisandromoon|1200x3200x12mm",
+    "expectedImage": "PALLISANDRO MOON.jpg"
+  },
+  {
+    "key": "patagoniabianco|1200x3200x12mm",
+    "expectedImage": "PATAGONOA BIANCO.jpg"
+  },
+  {
+    "key": "patagoniaa|1200x3200x12mm",
+    "expectedImage": "X PATAGONIA.jpg"
+  },
+  {
+    "key": "patagoniab|1200x3200x12mm",
+    "expectedImage": "X PATAGONIA.jpg"
+  },
+  {
+    "key": "patagonoabianco|1200x3200x12mm",
+    "expectedImage": "PATAGONOA BIANCO.jpg"
+  },
+  {
+    "key": "pietragrey|1200x3200x12mm",
+    "expectedImage": "PIETRA GREY.jpg"
+  },
+  {
+    "key": "rumitravertino|1200x3200x12mm",
+    "expectedImage": "RUMI TRAVERTINO.jpg"
+  },
+  {
+    "key": "satuariofantastico|1200x3200x12mm",
+    "expectedImage": "SATUARIO FANTASTICO.jpg"
+  },
+  {
+    "key": "satuarioreale|1200x3200x12mm",
+    "expectedImage": "SATVARIO REALE.jpg"
+  },
+  {
+    "key": "satvarioreale|1200x3200x12mm",
+    "expectedImage": "SATVARIO REALE.jpg"
+  },
+  {
+    "key": "travertinonavonacrema|1200x3200x12mm",
+    "expectedImage": "TRAVERTINO NAVONA CREMA.jpg"
+  },
+  {
+    "key": "travertinonovanacrema|1200x3200x12mm",
+    "expectedImage": "TRAVERTINO NAVONA CREMA.jpg"
+  }
+]

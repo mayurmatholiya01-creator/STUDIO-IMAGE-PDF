@@ -1,0 +1,370 @@
+[
+  {
+    "key": "artechnightblack|800x2400x15mm",
+    "expectedImage": "SEPOS NERO.jpg"
+  },
+  {
+    "key": "biancafiore|800x2400x15mm",
+    "expectedImage": "BIANCA FIORE.jpg"
+  },
+  {
+    "key": "biancafiore|800x2400x15mm",
+    "expectedImage": "BIANCA FIORE.jpg"
+  },
+  {
+    "key": "biancaflore|800x2400x15mm",
+    "expectedImage": "BIANCA FIORE.jpg"
+  },
+  {
+    "key": "biancofiore|800x2400x15mm",
+    "expectedImage": "BIANCA FIORE.jpg"
+  },
+  {
+    "key": "blackbonanza|800x2400x15mm",
+    "expectedImage": "BLACK BONANZA.jpg"
+  },
+  {
+    "key": "blackbonanza|800x2400x15mm",
+    "expectedImage": "BLACK BONANZA.jpg"
+  },
+  {
+    "key": "calacattaluna|800x2400x15mm",
+    "expectedImage": "CALACATTA LUNA.jpg"
+  },
+  {
+    "key": "calcattaluna|800x2400x15mm",
+    "expectedImage": "CALACATTA LUNA.jpg"
+  },
+  {
+    "key": "corianwhite|800x2400x15mm",
+    "expectedImage": "CRYSTAL WHITE.jpg"
+  },
+  {
+    "key": "corianwhite|800x2400x15mm",
+    "expectedImage": "CRYSTAL WHITE.jpg"
+  },
+  {
+    "key": "crystalwhite|800x2400x15mm",
+    "expectedImage": "CRYSTAL WHITE.jpg"
+  },
+  {
+    "key": "crystalwhite|800x2400x15mm",
+    "expectedImage": "CRYSTAL WHITE.jpg"
+  },
+  {
+    "key": "eclipseblack|800x2400x15mm",
+    "expectedImage": "ECLIPSE BLACK.jpg"
+  },
+  {
+    "key": "flieantnero|800x2400x15mm",
+    "expectedImage": "FLINT NERO.jpg"
+  },
+  {
+    "key": "flintnero|800x2400x15mm",
+    "expectedImage": "FLINT NERO.jpg"
+  },
+  {
+    "key": "fullbodybeige|800x2400x15mm",
+    "expectedImage": "FULLBODY BEIGE.jpg"
+  },
+  {
+    "key": "fullbodyblack|800x2400x15mm",
+    "expectedImage": "MONO BLACK.jpg"
+  },
+  {
+    "key": "fullbodysnpblack|800x2400x15mm",
+    "expectedImage": "SNP BLACK.jpg"
+  },
+  {
+    "key": "fullbodysnpblack|800x2400x15mm",
+    "expectedImage": "SNP BLACK.jpg"
+  },
+  {
+    "key": "fullbodyverde|800x2400x15mm",
+    "expectedImage": "MONO VERDE.jpg"
+  },
+  {
+    "key": "fullbodyverde|800x2400x15mm",
+    "expectedImage": "MONO VERDE.jpg"
+  },
+  {
+    "key": "fullbodywhite|800x2400x15mm",
+    "expectedImage": "MONO WHITE.jpg"
+  },
+  {
+    "key": "goldenpoptopo|800x2400x15mm",
+    "expectedImage": "GOLDEN PORTORO.jpg"
+  },
+  {
+    "key": "goldenportoro|800x2400x15mm",
+    "expectedImage": "GOLDEN PORTORO.jpg"
+  },
+  {
+    "key": "iceburgbianco|800x2400x15mm",
+    "expectedImage": "ICE BURG BLANCO.jpg"
+  },
+  {
+    "key": "jetblack|800x2400x15mm",
+    "expectedImage": "MONO ZED BLACK .jpg"
+  },
+  {
+    "key": "jetblack|800x2400x15mm",
+    "expectedImage": "MONO ZED BLACK .jpg"
+  },
+  {
+    "key": "macchiavecchia|800x2400x15mm",
+    "expectedImage": "MACCHIA VECCHIA.jpg"
+  },
+  {
+    "key": "markinaolspe|800x2400x15mm",
+    "expectedImage": "MARKINA OLSPE.jpg"
+  },
+  {
+    "key": "monoashgrey|800x2400x15mm",
+    "expectedImage": "MONO ASH GREY.jpg"
+  },
+  {
+    "key": "monoashgrey|800x2400x15mm",
+    "expectedImage": "MONO ASH GREY.jpg"
+  },
+  {
+    "key": "monoblack|800x2400x15mm",
+    "expectedImage": "MONO BLACK.jpg"
+  },
+  {
+    "key": "monoblack|800x2400x15mm",
+    "expectedImage": "MONO BLACK.jpg"
+  },
+  {
+    "key": "monobrown|800x2400x15mm",
+    "expectedImage": "MONO BROWN.jpg"
+  },
+  {
+    "key": "monobrown|800x2400x15mm",
+    "expectedImage": "MONO BROWN.jpg"
+  },
+  {
+    "key": "monogrey|800x2400x15mm",
+    "expectedImage": "MONO GREY.jpg"
+  },
+  {
+    "key": "monogrey|800x2400x15mm",
+    "expectedImage": "MONO GREY.jpg"
+  },
+  {
+    "key": "monoiceburg|800x2400x15mm",
+    "expectedImage": "MONO ICE BURG.jpg"
+  },
+  {
+    "key": "monoiceburg|800x2400x15mm",
+    "expectedImage": "MONO ICE BURG.jpg"
+  },
+  {
+    "key": "monoiceburger|800x2400x15mm",
+    "expectedImage": "MONO ICE BURG.jpg"
+  },
+  {
+    "key": "monokota|800x2400x15mm",
+    "expectedImage": "MONO KOTTO.jpg"
+  },
+  {
+    "key": "monokota|800x2400x15mm",
+    "expectedImage": "MONO KOTTO.jpg"
+  },
+  {
+    "key": "monokotta|800x2400x15mm",
+    "expectedImage": "MONO KOTTO.jpg"
+  },
+  {
+    "key": "monoverde|800x2400x15mm",
+    "expectedImage": "MONO VERDE.jpg"
+  },
+  {
+    "key": "monoverde|800x2400x15mm",
+    "expectedImage": "MONO VERDE.jpg"
+  },
+  {
+    "key": "monowhite|800x2400x15mm",
+    "expectedImage": "MONO WHITE.jpg"
+  },
+  {
+    "key": "onyxice|800x2400x15mm",
+    "expectedImage": "ONYX ICE.jpg"
+  },
+  {
+    "key": "onyxice|800x2400x15mm",
+    "expectedImage": "ONYX ICE.jpg"
+  },
+  {
+    "key": "quartzitebeige|800x2400x15mm",
+    "expectedImage": "QUARTZITE BEIGE.jpg"
+  },
+  {
+    "key": "quartzitebeige|800x2400x15mm",
+    "expectedImage": "QUARTZITE BEIGE.jpg"
+  },
+  {
+    "key": "quartzitechoco|800x2400x15mm",
+    "expectedImage": "QUARTZITE CHOCO.jpg"
+  },
+  {
+    "key": "quartzitechoco|800x2400x15mm",
+    "expectedImage": "QUARTZITE CHOCO.jpg"
+  },
+  {
+    "key": "quartzitechoko|800x2400x15mm",
+    "expectedImage": "QUARTZITE CHOCO.jpg"
+  },
+  {
+    "key": "quartzitewhite|800x2400x15mm",
+    "expectedImage": "QUARTZITE WHITE.jpg"
+  },
+  {
+    "key": "quartzitewhite|800x2400x15mm",
+    "expectedImage": "QUARTZITE WHITE.jpg"
+  },
+  {
+    "key": "quarzitebeige|800x2400x15mm",
+    "expectedImage": "QUARTZITE BEIGE.jpg"
+  },
+  {
+    "key": "riveraossido|800x2400x15mm",
+    "expectedImage": "RIVERA OSSIDO.jpg"
+  },
+  {
+    "key": "riveraossido|800x2400x15mm",
+    "expectedImage": "RIVERA OSSIDO.jpg"
+  },
+  {
+    "key": "saintlaurent|800x2400x15mm",
+    "expectedImage": "SAINT LAURENT.jpg"
+  },
+  {
+    "key": "saintlaurent|800x2400x15mm",
+    "expectedImage": "SAINT LAURENT.jpg"
+  },
+  {
+    "key": "satvarioreale|800x2400x15mm",
+    "expectedImage": "STATUARIO REALE.jpg"
+  },
+  {
+    "key": "satvarioreale|800x2400x15mm",
+    "expectedImage": "STATUARIO REALE.jpg"
+  },
+  {
+    "key": "seposchalk|800x2400x15mm",
+    "expectedImage": "SEPOS CHALK.jpg"
+  },
+  {
+    "key": "seposchalk|800x2400x15mm",
+    "expectedImage": "SEPOS CHALK.jpg"
+  },
+  {
+    "key": "seposgris|800x2400x15mm",
+    "expectedImage": "SEPOS GRIS.jpg"
+  },
+  {
+    "key": "seposgris|800x2400x15mm",
+    "expectedImage": "SEPOS GRIS.jpg"
+  },
+  {
+    "key": "seposnero|800x2400x15mm",
+    "expectedImage": "SEPOS NERO.jpg"
+  },
+  {
+    "key": "seposnero|800x2400x15mm",
+    "expectedImage": "SEPOS NERO.jpg"
+  },
+  {
+    "key": "sepostrigio|800x2400x15mm",
+    "expectedImage": "SEPOS TRIGO.jpg"
+  },
+  {
+    "key": "sepostrigo|800x2400x15mm",
+    "expectedImage": "SEPOS TRIGO.jpg"
+  },
+  {
+    "key": "sepostrigo|800x2400x15mm",
+    "expectedImage": "SEPOS TRIGO.jpg"
+  },
+  {
+    "key": "seposwhite|800x2400x15mm",
+    "expectedImage": "SEPOS WHITE.jpg"
+  },
+  {
+    "key": "seposwhite|800x2400x15mm",
+    "expectedImage": "SEPOS WHITE.jpg"
+  },
+  {
+    "key": "snpbeige|800x2400x15mm",
+    "expectedImage": "SNP BEIGE.jpg"
+  },
+  {
+    "key": "snpbeige|800x2400x15mm",
+    "expectedImage": "SNP BEIGE.jpg"
+  },
+  {
+    "key": "snpblack|800x2400x15mm",
+    "expectedImage": "SNP BLACK.jpg"
+  },
+  {
+    "key": "snpblack|800x2400x15mm",
+    "expectedImage": "SNP BLACK.jpg"
+  },
+  {
+    "key": "snpcosmicpeanut|800x2400x15mm",
+    "expectedImage": "SNP COSMIC PEANUT.jpg"
+  },
+  {
+    "key": "snpcosmicpeanut|800x2400x15mm",
+    "expectedImage": "SNP COSMIC PEANUT.jpg"
+  },
+  {
+    "key": "snpcosmicsmoke|800x2400x15mm",
+    "expectedImage": "SNP COSMIC SMOKE.jpg"
+  },
+  {
+    "key": "snpcosmicsteel|800x2400x15mm",
+    "expectedImage": "SNP COSMIC STEEL.jpg"
+  },
+  {
+    "key": "snpcosmicsteel|800x2400x15mm",
+    "expectedImage": "SNP COSMIC STEEL.jpg"
+  },
+  {
+    "key": "snpgrey|800x2400x15mm",
+    "expectedImage": "SNP GREY.jpg"
+  },
+  {
+    "key": "snpverde|800x2400x15mm",
+    "expectedImage": "SNP VERDE.jpg"
+  },
+  {
+    "key": "snpverde|800x2400x15mm",
+    "expectedImage": "SNP VERDE.jpg"
+  },
+  {
+    "key": "snpwhite|800x2400x15mm",
+    "expectedImage": "SNP WHITE.jpg"
+  },
+  {
+    "key": "snpwhite|800x2400x15mm",
+    "expectedImage": "SNP WHITE.jpg"
+  },
+  {
+    "key": "statuarioreale|800x2400x15mm",
+    "expectedImage": "STATUARIO REALE.jpg"
+  },
+  {
+    "key": "statuariovenato|800x2400x15mm",
+    "expectedImage": "STATUARIO VENATO.jpg"
+  },
+  {
+    "key": "steliabianco|800x2400x15mm",
+    "expectedImage": "STELIA BIANCO.jpg"
+  },
+  {
+    "key": "steliabianco|800x2400x15mm",
+    "expectedImage": "STELIA BIANCO.jpg"
+  }
+]

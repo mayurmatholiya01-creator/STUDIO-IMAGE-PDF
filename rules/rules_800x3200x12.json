@@ -1,0 +1,22 @@
+[
+  {
+    "key": "calacattaluna|800x3200x12mm",
+    "expectedImage": "CALACATTA LUNA.jpg"
+  },
+  {
+    "key": "darkgrey|800x3200x12mm",
+    "expectedImage": "DARK GREY.jpg"
+  },
+  {
+    "key": "lightgrey|800x3200x12mm",
+    "expectedImage": "LIGHT GREY.jpg"
+  },
+  {
+    "key": "superwhite|800x3200x12mm",
+    "expectedImage": "SUPER WHITE.jpg"
+  },
+  {
+    "key": "zedblack|800x3200x12mm",
+    "expectedImage": "ZED BLACK.jpg"
+  }
+]
