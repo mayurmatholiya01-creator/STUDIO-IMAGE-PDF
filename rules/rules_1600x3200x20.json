@@ -345,11 +345,11 @@
   },
   {
     "key": "desprostatuarioa|1600x3200x20mm",
-    "expectedImage": "X DESPRO STATUARIO.jpeg"
+    "expectedImage": "X DESPRO STATUARIO.jpg"
   },
   {
     "key": "desprostatuariob|1600x3200x20mm",
-    "expectedImage": "X DESPRO STATUARIO.jpeg"
+    "expectedImage": "X DESPRO STATUARIO.jpg"
   },
   {
     "key": "didymasilver|1600x3200x20mm",
@@ -809,7 +809,7 @@
   },
   {
     "key": "rosabiancosingleface|1600x3200x20mm",
-    "expectedImage": "ROSA BIANCO.jpeg"
+    "expectedImage": "ROSA BIANCO.jpg"
   },
   {
     "key": "royalblackmarquina|1600x3200x20mm",
@@ -965,6 +965,6 @@
   },
   {
     "key": "whitepure|1600x3200x20mm",
-    "expectedImage": "WHITE PURE.jpeg"
+    "expectedImage": "WHITE PURE.jpg"
   }
 ]
