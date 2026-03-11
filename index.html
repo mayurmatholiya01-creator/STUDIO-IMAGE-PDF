@@ -245,6 +245,7 @@
     <script>
         // --- GLOBAL STATE ---
         let imageStore = []; 
+        let masterRules = {};
         let rawSheetData = []; 
         let finalData = [];
         let persistentState = {}; 
@@ -285,6 +286,43 @@
                 request.onerror = () => reject(request.error);
             });
         }
+
+        async function loadAllRules() {
+    const ruleFiles = [
+        'rules_800x2400x15.json',
+        'rules_800x3000x15.json',
+        'rules_800x3200x12.json',
+        'rules_1000x3000x5.json',
+        'rules_1200x1200x9.json',
+            'rules_1200x1800x9.json',
+            'rules_1200x2400x9.json',
+            'rules_1200x2800x6.json',
+            'rules_1200x3200x12.json',
+            'rules_1200x3200x15.json',
+            'rules_1600x1600x9.json',
+            'rules_1600x3200x6.json',
+           'rules_1600x3200x12.json',
+            'rules_1600x3200x20.json',
+        // Baaki 12 files ke naam bhi yahan add karein
+    ];
+
+    for (let fileName of ruleFiles) {
+        try {
+            const response = await fetch(`rules/${fileName}`);
+            const data = await response.json();
+            
+            data.forEach(rule => {
+                // Key ko lowercase mein store karna taaki matching asaan ho
+                masterRules[rule.key.toLowerCase()] = rule.expectedImage;
+            });
+        } catch (e) {
+            console.error("Error loading rule file:", fileName);
+        }
+    }
+    console.log("Master Rules Loaded");
+}
+
+
 
         async function saveFolderHandle(handle) {
             const db = await initDB();
