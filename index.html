@@ -697,49 +697,52 @@
             runMatcher();
         }
 
-        // --- 4. MATCHER ---
-        function runMatcher() {
-            if (finalData.length === 0) {
-                mainContainer.innerHTML = '<div class="text-center text-[#FF3B30] font-bold text-sm mt-40">No data found for this Grade or Mode.</div>';
-                document.getElementById('foundItems').innerText = "0";
-                generateBtn.disabled = true;
-                renderFilters();
-                statusMsg.innerText = "Ready";
-                return;
-            }
-            
-            statusMsg.innerText = "Smart Searching...";
-            mainContainer.innerHTML = "";
-
-            finalData.forEach((item) => {
-                let ps = persistentState[item.groupKey];
-                
-                if (ps && ps.hasManualImageChange) {
-                    item.matchedFile = ps.matchedFile;
-                    item.blobUrl = ps.blobUrl;
-                    return; 
-                }
-
-                if (imageStore.length > 0) {
-                    let bestMatch = null;
-                    const allFolders = [...new Set(imageStore.map(img => img.cleanFolder))];
-                    let searchFolders = [item.cleanSize]; 
-                    const neighborFolders = sortFoldersByDistance(allFolders, item.cleanSize);
-                    searchFolders = [...searchFolders, ...neighborFolders.filter(f => f !== item.cleanSize)];
-
-                    for (let folderName of searchFolders) {
-                        let folderImages = imageStore.filter(img => img.cleanFolder === folderName);
-                        if (folderImages.length === 0) continue;
-                        for (let img of folderImages) {
-                            if (img.cleanName.includes(item.cleanDesign)) { bestMatch = img.file; break; }
-                        }
-                        if (bestMatch) break; 
-                    }
-                    item.matchedFile = bestMatch;
-                }
-            });
-            renderGrid();
+       function runMatcher() {
+    if (finalData.length === 0) {
+        mainContainer.innerHTML = '<div class="text-center text-[#FF3B30] font-bold text-sm mt-40">No data found.</div>';
+        document.getElementById('foundItems').innerText = "0";
+        generateBtn.disabled = true;
+        return;
+    }
+    
+    statusMsg.innerText = "Rules-based searching...";
+    
+    finalData.forEach((item) => {
+        let ps = persistentState[item.groupKey];
+        if (ps && ps.hasManualImageChange) {
+            item.matchedFile = ps.matchedFile;
+            item.blobUrl = ps.blobUrl;
+            return; 
         }
+
+        // 1. JSON se Expected Image Name dhundhna
+        // Key format: designname|sizemm (Jaise rules file mein hai)
+        let lookupKey = `${item.cleanDesign}|${item.cleanSize}`;
+        let expectedFileName = masterRules[lookupKey]; 
+
+        if (imageStore.length > 0) {
+            let bestMatch = null;
+
+            // 2. Step 5 Logic: Sirf wahi images filter karein jo sahi size folder mein hain
+            // Aapka code pehle se cleanFolder track karta hai
+            let folderImages = imageStore.filter(img => img.cleanFolder === item.cleanSize);
+
+            if (expectedFileName) {
+                // JSON Rule match hua: Exact file name search karein
+                let cleanExpected = expectedFileName.toLowerCase().trim();
+                bestMatch = folderImages.find(img => img.name.toLowerCase() === cleanExpected);
+            }
+
+            // Agar JSON rule nahi mila ya file nahi mili, toh fallback (purana method)
+            if (!bestMatch) {
+                bestMatch = folderImages.find(img => img.cleanName.includes(item.cleanDesign));
+            }
+
+            item.matchedFile = bestMatch ? bestMatch.file : null;
+        }
+    });
+    renderGrid();
+}
 
         // --- PRO FILTER RENDERING & LOGIC ---
         function renderFilters() {
