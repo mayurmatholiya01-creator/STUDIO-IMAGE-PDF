@@ -345,11 +345,11 @@
   },
   {
     "key": "desprostatuarioa|1600x3200x12mm",
-    "expectedImage": "X DESPRO STATUARIO.jpeg"
+    "expectedImage": "X DESPRO STATUARIO.jpg"
   },
   {
     "key": "desprostatuariob|1600x3200x12mm",
-    "expectedImage": "X DESPRO STATUARIO.jpeg"
+    "expectedImage": "X DESPRO STATUARIO.jpg"
   },
   {
     "key": "didymasilver|1600x3200x12mm",
@@ -965,6 +965,6 @@
   },
   {
     "key": "whitepure|1600x3200x12mm",
-    "expectedImage": "WHITE PURE.jpeg"
+    "expectedImage": "WHITE PURE.jpg"
   }
 ]
