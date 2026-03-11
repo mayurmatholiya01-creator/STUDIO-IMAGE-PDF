@@ -801,11 +801,11 @@
   },
   {
     "key": "romea|1600x3200x20mm",
-    "expectedImage": "X ROME.jpeg"
+    "expectedImage": "X ROME.jpg"
   },
   {
     "key": "romeb|1600x3200x20mm",
-    "expectedImage": "X ROME.jpeg"
+    "expectedImage": "X ROME.jpg"
   },
   {
     "key": "rosabiancosingleface|1600x3200x20mm",
