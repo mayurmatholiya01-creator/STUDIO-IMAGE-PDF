@@ -56,6 +56,14 @@
     "expectedImage": "DIAMANTE SMOKE.jpg"
   },
   {
+    "key": "lilacmisticaa|1200x3200x12mm",
+    "expectedImage": "X LILAC MISTICA.jpg"
+  },
+  {
+    "key": "lilacmisticab|1200x3200x12mm",
+    "expectedImage": "X LILAC MISTICA.jpg"
+  },
+  {
     "key": "manhattanwhite|1200x3200x12mm",
     "expectedImage": "MANHATTAN WHITE.jpg"
   },
