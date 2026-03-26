@@ -637,19 +637,19 @@
   },
   {
     "key": "nofargrey|1200x2800x6mm",
-    "expectedImage": "X NERON GREY .jpg"
+    "expectedImage": "X NOFAR GRAY.jpg"
   },
   {
     "key": "nofargreya|1200x2800x6mm",
-    "expectedImage": "X NERON GREY .jpg"
+    "expectedImage": "X NOFAR GRAY.jpg"
   },
   {
     "key": "nofargreyb|1200x2800x6mm",
-    "expectedImage": "X NERON GREY .jpg"
+    "expectedImage": "X NOFAR GRAY.jpg"
   },
   {
     "key": "nofargreyc|1200x2800x6mm",
-    "expectedImage": "X NERON GREY .jpg"
+    "expectedImage": "X NOFAR GRAY.jpg"
   },
   {
     "key": "noirserpents|1200x2800x6mm",
