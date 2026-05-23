@@ -834,7 +834,14 @@ let deletedCoverPages = new Set(); // NEW: Track deleted cover pages
         window.addEventListener('DOMContentLoaded', async () => { embedFonts(); await loadAllRules(); const savedHandle = await getSavedFolderHandle(); if (savedHandle) { updateFolderUI('SAVED_READY'); } else { updateFolderUI('DEFAULT'); } });
 
         function setMode(isAdv) { isAdvanceMode = isAdv; const container = document.getElementById('modeSelector'); const btnBasic = document.getElementById('btn-basic-mode'); const btnAdv = document.getElementById('btn-adv-mode'); if (isAdvanceMode) { container.classList.add('adv-active'); btnAdv.classList.add('active'); btnBasic.classList.remove('active'); } else { container.classList.remove('adv-active'); btnBasic.classList.add('active'); btnAdv.classList.remove('active'); } if(rawSheetData.length > 0) processExcelData(); }
-        function setGrade(grade) { if (activeGrade === grade) return; activeGrade = grade; document.querySelectorAll('.apple-grade-btn').forEach(btn => btn.classList.remove('active')); document.getElementById(`btn-${grade}`).classList.add('active'); if(finalData.length > 0) applyVisibility(); }
+        function setGrade(grade) { 
+    if (activeGrade === grade) return; 
+    activeGrade = grade;
+    for (let key in coverCache) delete coverCache[key]; // ← YEH LINE ADD KARO
+    document.querySelectorAll('.apple-grade-btn').forEach(btn => btn.classList.remove('active')); 
+    document.getElementById(`btn-${grade}`).classList.add('active'); 
+    if(finalData.length > 0) applyVisibility(); 
+}
         function toggleMissingFilter() { isMissingFilterOn = !isMissingFilterOn; document.getElementById('missingToggleUi').classList.toggle('on'); applyVisibility(); }
         function toggleAdvancedFilters() { isAdvancedFiltersOpen = !isAdvancedFiltersOpen; const row = document.getElementById('advancedFiltersRow'); if (isAdvancedFiltersOpen) { row.classList.add('advanced-open'); } else { row.classList.remove('advanced-open'); } }
 
