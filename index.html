@@ -10,7 +10,6 @@
     <script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html-to-image/1.11.11/html-to-image.min.js"></script>
-    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +24,7 @@
         body { background: #E8E8ED; color: #1D1D1F; font-family: 'Inter', sans-serif; height: 100vh; overflow: hidden; margin: 0; padding: 0; }
         .layout { display: grid; grid-template-columns: 320px 1fr; height: 100%; }
         
-       .sidebar { background: #FFFFFF; border-right: 1px solid #D2D2D7; padding: 24px; display: flex; flex-direction: column; gap: 15px; box-shadow: 2px 0 10px rgba(0,0,0,0.02); z-index: 50; height: 100%; overflow-y: auto; overflow-x: hidden; position: relative; }
+        .sidebar { background: #FFFFFF; border-right: 1px solid #D2D2D7; padding: 24px; display: flex; flex-direction: column; gap: 15px; box-shadow: 2px 0 10px rgba(0,0,0,0.02); z-index: 50; height: 100%; overflow-y: auto; overflow-x: hidden; position: relative; }
         .main { background: #E8E8ED; overflow-y: auto; overflow-x: hidden; display: flex; flex-direction: column; align-items: center; position: relative; }
 
         #filterWrapper { position: sticky; top: 0; z-index: 40; width: 100%; background: rgba(232, 232, 237, 0.75); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); padding: 12px 24px; border-bottom: 1px solid rgba(0,0,0,0.05); }
@@ -170,64 +169,60 @@
             mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
         }
 
-       /* ================= ACCORDION (SLIM & PERFECTLY CENTERED) ================= */
-.accordion-card { 
-    background: #FAFAFC; 
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
-    border: 1px solid rgba(0,0,0,0.04);
-    /* IMPORTANT: यह बाहर निकलने वाली किसी भी फालतू जगह (blank space) को काट देगा */
-    overflow: hidden !important; 
-}
+       /* ================= ACCORDION ================= */
+        .accordion-card { 
+            background: #FAFAFC; 
+            transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+            border: 1px solid rgba(0,0,0,0.04);
+            overflow: hidden !important; 
+        }
 
-.accordion-card.open { 
-    background: #FFFFFF; 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.03); 
-    border-color: rgba(0,0,0,0.06);
-}
+        .accordion-card.open { 
+            background: #FFFFFF; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03); 
+            border-color: rgba(0,0,0,0.06);
+        }
 
-/* 1. Header (टेक्स्ट वाले हिस्से) को स्लिम और सेंटर करना */
-.accordion-card > div:first-child { 
-    padding: 10px 16px !important; /* ऊपर-नीचे की पैडिंग कम की गई है */
-    height: 54px !important; /* Apple डिज़ाइन जैसी एकदम फिक्स स्लिम हाइट */
-    display: flex;
-    align-items: center; /* टेक्स्ट और आइकॉन को एकदम बीच (center) में लाएगा */
-}
+        .accordion-card > div:first-child { 
+            padding: 10px 16px !important;
+            height: 54px !important;
+            display: flex;
+            align-items: center; 
+        }
 
-.accordion-content { 
-    display: grid; 
-    grid-template-rows: 0fr; 
-    transition: grid-template-rows 0.3s ease-out; 
-}
+        .accordion-content { 
+            display: grid; 
+            grid-template-rows: 0fr; 
+            transition: grid-template-rows 0.3s ease-out; 
+        }
 
-/* 2. मेन जादू: बंद होने पर अंदर की पैडिंग 0 हो जाएगी, जिससे नीचे कोई जगह नहीं बचेगी */
-.accordion-content > div { 
-    overflow: hidden; 
-    opacity: 0;
-    min-height: 0; 
-    padding-top: 0 !important; 
-    padding-bottom: 0 !important; 
-    transition: opacity 0.2s ease-out, padding 0.3s ease-out;
-}
+        .accordion-content > div { 
+            overflow: hidden; 
+            opacity: 0;
+            min-height: 0; 
+            padding-top: 0 !important; 
+            padding-bottom: 0 !important; 
+            transition: opacity 0.2s ease-out, padding 0.3s ease-out;
+        }
 
-.accordion-card.open .accordion-content { 
-    grid-template-rows: 1fr; 
-}
+        .accordion-card.open .accordion-content { 
+            grid-template-rows: 1fr; 
+        }
 
-/* खुलने पर वापस नॉर्मल पैडिंग आ जाएगी */
-.accordion-card.open .accordion-content > div { 
-    opacity: 1;
-    padding-top: 4px !important; 
-    padding-bottom: 20px !important; 
-    transition: opacity 0.3s ease-out 0.1s, padding 0.3s ease-out;
-}
+        .accordion-card.open .accordion-content > div { 
+            opacity: 1;
+            padding-top: 4px !important; 
+            padding-bottom: 20px !important; 
+            transition: opacity 0.3s ease-out 0.1s, padding 0.3s ease-out;
+        }
 
-.accordion-chevron { 
-    transition: transform 0.3s ease-out; 
-}
+        .accordion-chevron { 
+            transition: transform 0.3s ease-out; 
+        }
 
-.accordion-card.open .accordion-chevron { 
-    transform: rotate(180deg); 
-}
+        .accordion-card.open .accordion-chevron { 
+            transform: rotate(180deg); 
+        }
     </style>
 </head>
 <body>
@@ -518,7 +513,6 @@
                 const faceData = await load('./face-id.json');
                 const dsdsdData = await load('./dsdsd.json');
                 
-                // Keep exactly as original uploaded code
                 dsdsdData.layers = dsdsdData.layers.filter(l => l.ty !== 0);
                 recolorJSON(dsdsdData);
 
@@ -551,7 +545,6 @@
                     return;
                 }
 
-                // 1. Sidebar Lock
                 const sidebarEl = document.querySelector('.sidebar');
                 if(sidebarEl) sidebarEl.style.overflow = 'hidden'; 
 
@@ -567,7 +560,6 @@
                     inputGrp.style.pointerEvents = 'none';
                 }
 
-                // 2. Button Morphs UP
                 btn.style.pointerEvents = 'none';
                 btn.style.color = 'transparent'; 
                 btn.style.backgroundColor = '#1D1D1F'; 
@@ -581,7 +573,6 @@
                 if(statusMsg) statusMsg.innerText = "Initiating...";
 
                 setTimeout(() => {
-                    // Instant Transition Fix
                     btn.style.transition = 'none'; 
                     btn.style.backgroundColor = 'transparent'; 
                     btn.style.boxShadow = 'none';
@@ -596,7 +587,6 @@
                     animFace.goToAndStop(0, true);
                     inner.style.opacity = '0';
 
-                    // 1. Draw Outer Box
                     animFrame.playSegments([0, 72], true);
                     
                     animFrame.addEventListener('complete', function onBox() {
@@ -607,7 +597,6 @@
                         let isPdfReady = false; 
                         let pdfResultData = null;
                         
-                        // Start PDF Generation Task
                         const pdfTaskPromise = new Promise(r => setTimeout(r, 100)).then(() => createPDF());
                         pdfTaskPromise.then(res => { isPdfReady = true; pdfResultData = res; });
 
@@ -730,29 +719,39 @@
         }
 
         // --- GLOBAL STATE ---
-        let imageStore = []; let masterRules = {}; let coverEdits = {};
+        let imageStore = []; let masterRules = {}; 
         const coverCache = {};
-        function makeCoverEditable(el) {
-    el.contentEditable = "true";
-    el.focus();
-    el.style.outline = "1px dashed #FF3B30"; // User ko pata chale ki editing chal rahi hai
-}
+        
+        let coverEdits = {}; // Cover page edits
+        
+        // Editable Cover Handlers
+        function makeCoverEditable(el) { el.contentEditable = "true"; el.focus(); el.style.outline = "1px dashed #FF3B30"; }
+        function saveCoverEdit(el, size, field) {
+            el.contentEditable = "false"; el.style.outline = "none";
+            let newValue = el.innerText.trim();
+            if (!coverEdits[size]) coverEdits[size] = {}; coverEdits[size][field] = newValue;
+            if (coverCache[size]) delete coverCache[size];
+            setTimeout(() => preCoverCards(), 100);
+        }
 
-// Blur hone par value save karne aur PDF cache clear karne ka function
-function saveCoverEdit(el, size, field) {
-    el.contentEditable = "false";
-    el.style.outline = "none";
-    let newValue = el.innerText.trim();
-    
-    if (!coverEdits[size]) coverEdits[size] = {};
-    coverEdits[size][field] = newValue;
-    
-    // Purana cached cover page image delete karein taaki PDF naye text ke sath generate ho
-    if (coverCache[size]) delete coverCache[size];
-    
-    // Background mai naya cover page image cache prepare karein
-    setTimeout(() => preCoverCards(), 100);
-}
+        // Editable Batch/Advance Mode Handlers
+        function handleBatchHeaderEdit(index, field, element) {
+            let newValue = element.innerText.replace(/(\r\n|\n|\r)/gm, " ").trim().toUpperCase();
+            if(newValue === '') { element.innerText = field === 'boxLabel' ? 'BOX' : field === 'batchLabel' ? 'BATCH NO' : 'QTY'; return; }
+            finalData[index][field] = newValue; saveToPersistent(index);
+        }
+
+        function handleBatchRowEdit(itemIndex, batchIndex, field, element) {
+            let newValue = element.innerText.replace(/(\r\n|\n|\r)/gm, " ").trim().toUpperCase();
+            if (field === 'qty') {
+                let num = parseFloat(newValue) || 0; finalData[itemIndex].batches[batchIndex][field] = num;
+                let newTotal = 0; finalData[itemIndex].batches.forEach(b => newTotal += (parseFloat(b.qty) || 0));
+                finalData[itemIndex].totalQty = newTotal;
+                const wrapperEl = finalData[itemIndex].domWrapper || document.getElementById(`wrapper-${itemIndex}`);
+                if (wrapperEl) { const qtyDisplay = wrapperEl.querySelector('div[style*="font-size:32px"]'); if (qtyDisplay) qtyDisplay.innerText = newTotal; }
+            } else { finalData[itemIndex].batches[batchIndex][field] = newValue; }
+            saveToPersistent(itemIndex);
+        }
 
         async function preCoverCards() {
             const sizes = [...new Set(finalData.map(i => i.size.toUpperCase().replace(/\s+/g,'')))];
@@ -772,17 +771,14 @@ function saveCoverEdit(el, size, field) {
             }
         }
 
-       let rawSheetData = []; let finalData = [];
-let persistentState = {}; let activeEditIndex = -1; let isMissingFilterOn = false; let deletedStack = []; 
-let deletedCoverPages = new Set(); // NEW: Track deleted cover pages
+        let rawSheetData = []; let finalData = [];
+        let persistentState = {}; let activeEditIndex = -1; let isMissingFilterOn = false; let deletedStack = []; 
+        let deletedCoverPages = new Set();
         let isAdvanceMode = true; let activeGrade = 'PRE';   
-        let qtyDebounceTimer; // Yeh hamara typing delay handle karega
-        // PRO FILTER STATES
-        let selectedSizes = new Set(); let selectedFinishes = new Set(); let selectedBodies = new Set(); let isAdvancedFiltersOpen = false;
+        let qtyDebounceTimer; 
         
-        // QTY FILTER STATES
-        let minBoxQty = 0;
-        let maxBoxQty = Infinity;
+        let selectedSizes = new Set(); let selectedFinishes = new Set(); let selectedBodies = new Set(); let isAdvancedFiltersOpen = false;
+        let minBoxQty = 0; let maxBoxQty = Infinity;
       
         const excelInput = document.getElementById('excelInput');
         const manualImgInput = document.getElementById('manualImgInput');
@@ -794,7 +790,6 @@ let deletedCoverPages = new Set(); // NEW: Track deleted cover pages
 
         window.addEventListener('beforeunload', function (e) { if (finalData.length > 0) { e.preventDefault(); e.returnValue = ''; } });
 
-        // --- AUTO FIT FONT SIZE LOGIC ---
         function fitMid(midEl, availableWidth, baseNumSize, baseSepSize, baseUnitSize) {
             midEl.querySelectorAll('[data-role="num"]').forEach(el => el.style.fontSize = baseNumSize + 'px');
             midEl.querySelectorAll('[data-role="sep"]').forEach(el => el.style.fontSize = baseSepSize + 'px');
@@ -811,7 +806,6 @@ let deletedCoverPages = new Set(); // NEW: Track deleted cover pages
             }, 60);
         }
 
-        // --- FOLDER MEMORY ---
         const DB_NAME = 'StockProDB'; const STORE_NAME = 'folderStore';
         function initDB() { return new Promise((resolve, reject) => { const request = indexedDB.open(DB_NAME, 1); request.onupgradeneeded = (e) => { e.target.result.createObjectStore(STORE_NAME); }; request.onsuccess = () => resolve(request.result); request.onerror = () => reject(request.error); }); }
         
@@ -856,28 +850,22 @@ let deletedCoverPages = new Set(); // NEW: Track deleted cover pages
 
         function setMode(isAdv) { isAdvanceMode = isAdv; const container = document.getElementById('modeSelector'); const btnBasic = document.getElementById('btn-basic-mode'); const btnAdv = document.getElementById('btn-adv-mode'); if (isAdvanceMode) { container.classList.add('adv-active'); btnAdv.classList.add('active'); btnBasic.classList.remove('active'); } else { container.classList.remove('adv-active'); btnBasic.classList.add('active'); btnAdv.classList.remove('active'); } if(rawSheetData.length > 0) processExcelData(); }
         function setGrade(grade) { 
-    if (activeGrade === grade) return; 
-    activeGrade = grade;
-    for (let key in coverCache) delete coverCache[key]; // ← YEH LINE ADD KARO
-    document.querySelectorAll('.apple-grade-btn').forEach(btn => btn.classList.remove('active')); 
-    document.getElementById(`btn-${grade}`).classList.add('active'); 
-    if(finalData.length > 0) applyVisibility(); 
-}
+            if (activeGrade === grade) return; 
+            activeGrade = grade;
+            for (let key in coverCache) delete coverCache[key]; 
+            document.querySelectorAll('.apple-grade-btn').forEach(btn => btn.classList.remove('active')); 
+            document.getElementById(`btn-${grade}`).classList.add('active'); 
+            if(finalData.length > 0) applyVisibility(); 
+        }
         function toggleMissingFilter() { isMissingFilterOn = !isMissingFilterOn; document.getElementById('missingToggleUi').classList.toggle('on'); applyVisibility(); }
         function toggleAdvancedFilters() { isAdvancedFiltersOpen = !isAdvancedFiltersOpen; const row = document.getElementById('advancedFiltersRow'); if (isAdvancedFiltersOpen) { row.classList.add('advanced-open'); } else { row.classList.remove('advanced-open'); } }
 
-        // COVER PAGE STATE & LOGIC
-        let isMasterCoverEnabled = true;
-        let isCoverLogoEnabled = true;
-        let isCoverGradeEnabled = true;
-        let isCoverFooterEnabled = true;
-        let coverAreaUnit = 'SQFT';
+        let isMasterCoverEnabled = true; let isCoverLogoEnabled = true; let isCoverGradeEnabled = true; let isCoverFooterEnabled = true; let coverAreaUnit = 'SQFT';
 
         function toggleMasterCover() {
             isMasterCoverEnabled = !isMasterCoverEnabled;
             document.getElementById('masterToggleUi').classList.toggle('on');
             document.getElementById('masterToggleUi').classList.toggle('master-on');
-            
             const subWrapper = document.getElementById('subControlsWrapper');
             subWrapper.style.opacity = isMasterCoverEnabled ? '1' : '0.4';
             subWrapper.style.pointerEvents = isMasterCoverEnabled ? 'auto' : 'none';
@@ -900,60 +888,45 @@ let deletedCoverPages = new Set(); // NEW: Track deleted cover pages
 
         function updateAllCoverCards() {
             for (let key in coverCache) delete coverCache[key];
-
             document.querySelectorAll('.cover-card-item').forEach(card => {
                 if (!isMasterCoverEnabled) { card.classList.add('disabled-card'); } else { card.classList.remove('disabled-card'); }
-                
                 const logo = card.querySelector('.elogo');
                 if (logo) isCoverLogoEnabled ? logo.classList.remove('hidden-element') : logo.classList.add('hidden-element');
-
                 const grade = card.querySelector('.egrade');
                 if (grade) isCoverGradeEnabled ? grade.classList.remove('hidden-element') : grade.classList.add('hidden-element');
-
                 const footer = card.querySelector('.ebot');
                 if (footer) isCoverFooterEnabled ? footer.classList.remove('hidden-element') : footer.classList.add('hidden-element');
 
-               const sizeKey = card.dataset.size;
-const edits = coverEdits[sizeKey] || {};
-
-const areaEl = card.querySelector('.cover-area-val');
-if (areaEl) {
-    // Agar user ne manually edit kiya hua hai toh wahi rone dein, warna normal toggle karein
-    if (edits.val_area !== undefined) {
-        areaEl.innerText = edits.val_area;
-    } else {
-        let sqftRaw = areaEl.getAttribute('data-sqft');
-        if(sqftRaw && sqftRaw !== '-') {
-            areaEl.innerText = coverAreaUnit === 'SQM' ? (parseFloat(sqftRaw) / 10.7639).toFixed(2) + ' SQM' : sqftRaw + ' SQFT';
-        }
-    }
-}
+                const sizeKey = card.dataset.size;
+                const edits = coverEdits[sizeKey] || {};
+                const areaEl = card.querySelector('.cover-area-val');
+                
+                if (areaEl) {
+                    if (edits.val_area !== undefined) {
+                        areaEl.innerText = edits.val_area;
+                    } else {
+                        let sqftRaw = areaEl.getAttribute('data-sqft');
+                        if(sqftRaw && sqftRaw !== '-') {
+                            areaEl.innerText = coverAreaUnit === 'SQM' ? (parseFloat(sqftRaw) / 10.7639).toFixed(2) + ' SQM' : sqftRaw + ' SQFT';
+                        }
+                    }
+                }
             });
             setTimeout(() => preCoverCards(), 100);
         }
 
-       function updateQtyFilter() {
-    // 1. Agar user lagatar type kar raha hai, toh purane timer ko cancel kar do
-    clearTimeout(qtyDebounceTimer);
-
-    // 2. Naya timer set karo. Jab typing ruke 400 milliseconds ho jayenge, tabhi yeh andar ka code chalega.
-    qtyDebounceTimer = setTimeout(() => {
-        let minVal = parseInt(document.getElementById('minQtyInput').value);
-        let maxVal = parseInt(document.getElementById('maxQtyInput').value);
-        
-        minBoxQty = isNaN(minVal) ? 0 : minVal;
-        maxBoxQty = isNaN(maxVal) ? Infinity : maxVal;
-        
-        applyVisibility();
-    }, 400); // 400ms ka delay (Aap chaho toh isko 300 ya 500 bhi kar sakte ho)
-}
+        function updateQtyFilter() {
+            clearTimeout(qtyDebounceTimer);
+            qtyDebounceTimer = setTimeout(() => {
+                let minVal = parseInt(document.getElementById('minQtyInput').value); let maxVal = parseInt(document.getElementById('maxQtyInput').value);
+                minBoxQty = isNaN(minVal) ? 0 : minVal; maxBoxQty = isNaN(maxVal) ? Infinity : maxVal;
+                applyVisibility();
+            }, 400); 
+        }
 
         function resetQtyFilter() {
-            document.getElementById('minQtyInput').value = '';
-            document.getElementById('maxQtyInput').value = '';
-            minBoxQty = 0;
-            maxBoxQty = Infinity;
-            applyVisibility();
+            document.getElementById('minQtyInput').value = ''; document.getElementById('maxQtyInput').value = '';
+            minBoxQty = 0; maxBoxQty = Infinity; applyVisibility();
         }
 
         excelInput.addEventListener('change', (e) => {
@@ -962,25 +935,26 @@ if (areaEl) {
         });
 
         function saveToPersistent(index, isImageAction = false) {
-            const item = finalData[index]; if(!item) return; if(!persistentState[item.groupKey]) persistentState[item.groupKey] = {}; persistentState[item.groupKey].isDeleted = item.isDeleted; persistentState[item.groupKey].customDesign = item.design; persistentState[item.groupKey].customSize = item.size; persistentState[item.groupKey].customFinish = item.finish; persistentState[item.groupKey].customBody = item.body;
+            const item = finalData[index]; if(!item) return; if(!persistentState[item.groupKey]) persistentState[item.groupKey] = {}; 
+            persistentState[item.groupKey].isDeleted = item.isDeleted; 
+            persistentState[item.groupKey].customDesign = item.design; 
+            persistentState[item.groupKey].customSize = item.size; 
+            persistentState[item.groupKey].customFinish = item.finish; 
+            persistentState[item.groupKey].customBody = item.body;
+            
+            persistentState[item.groupKey].boxLabel = item.boxLabel;
+            persistentState[item.groupKey].batchLabel = item.batchLabel;
+            persistentState[item.groupKey].qtyLabel = item.qtyLabel;
+            if(item.batches) persistentState[item.groupKey].batches = JSON.parse(JSON.stringify(item.batches));
+            persistentState[item.groupKey].totalQty = item.totalQty;
+
             if (isImageAction) { persistentState[item.groupKey].matchedFile = item.matchedFile; persistentState[item.groupKey].blobUrl = item.blobUrl; persistentState[item.groupKey].hasManualImageChange = true; }
         }
 
         function clearExcelData(e) {
-    e.stopPropagation(); 
-    
-    // NAYA LOGIC: Arrays khali karne se pehle RAM memory free karo
-    if (finalData && finalData.length > 0) {
-        finalData.forEach(item => {
-            if (item.blobUrl) {
-                URL.revokeObjectURL(item.blobUrl);
-            }
-        });
-    }
-
-    rawSheetData = []; 
-    finalData = []; 
-    document.getElementById('excelInput').value = '';
+            e.stopPropagation(); 
+            if (finalData && finalData.length > 0) { finalData.forEach(item => { if (item.blobUrl) { URL.revokeObjectURL(item.blobUrl); } }); }
+            rawSheetData = []; finalData = []; document.getElementById('excelInput').value = '';
             const zone = document.getElementById('excelZone'); const text = document.getElementById('excelText'); const subText = document.getElementById('excelSubText'); const icon = document.getElementById('excelIcon'); const clearBtn = document.getElementById('clearExcelBtn');
             zone.style.borderColor = ""; zone.style.background = ""; text.innerText = "2. SELECT EXCEL DATA"; text.style.color = '#86868B'; subText.innerText = ""; subText.classList.add('hidden');
             icon.style.color = '#86868B'; icon.innerHTML = `<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="8" y1="13" x2="16" y2="13"></line><line x1="8" y1="17" x2="16" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline>`;
@@ -1019,6 +993,27 @@ if (areaEl) {
             const customSurfaceOrder = ["ELEGANCE", "POLISH", "GLOSSY", "MATT", "RE MATT", "REPOSE", "RUSTIC MATT", "REMATT", "CARVE TECH", "LUMINOUS", "HIGH GLOSSY", "LUMINUS", "SOFT SATIN", "GRACE", "D.G MATT", "SAHARA", "SILK", "ROCKER", "ILLUSION", "GRAVEL", "SHAPE TECH", "RETROIS", "METALLIC", "GAMMA", "CRYSTAL", "BRILLIANT", "BRILLIANT CRYSTAL", "CRYSTALINE CRYSTAL", "LUX", "LUSTROUS", "REPOSE R-10", "ORRA"];
             finalData.sort((a, b) => { let sizeA = (a.size || "").toUpperCase().trim(); let sizeB = (b.size || "").toUpperCase().trim(); if (sizeA < sizeB) return -1; if (sizeA > sizeB) return 1; let indexA = customSurfaceOrder.indexOf((a.finish || "").toUpperCase().trim()); let indexB = customSurfaceOrder.indexOf((b.finish || "").toUpperCase().trim()); if (indexA === -1) indexA = 9999; if (indexB === -1) indexB = 9999; if (indexA !== indexB) return indexA - indexB; let designA = (a.design || "").toUpperCase().trim(); let designB = (b.design || "").toUpperCase().trim(); return designA.localeCompare(designB); });
 
+            // Restore persistent states for advance batches and custom edits
+            finalData.forEach(item => {
+                let ps = persistentState[item.groupKey];
+                if (ps) {
+                    if (ps.isDeleted !== undefined) item.isDeleted = ps.isDeleted;
+                    if (ps.customDesign !== undefined) item.design = ps.customDesign;
+                    if (ps.customSize !== undefined) item.size = ps.customSize;
+                    if (ps.customFinish !== undefined) item.finish = ps.customFinish;
+                    if (ps.customBody !== undefined) item.body = ps.customBody;
+                    if (ps.boxLabel !== undefined) item.boxLabel = ps.boxLabel;
+                    if (ps.batchLabel !== undefined) item.batchLabel = ps.batchLabel;
+                    if (ps.qtyLabel !== undefined) item.qtyLabel = ps.qtyLabel;
+                    if (ps.batches !== undefined) item.batches = JSON.parse(JSON.stringify(ps.batches));
+                    if (ps.totalQty !== undefined) item.totalQty = ps.totalQty;
+                } else {
+                    item.boxLabel = "BOX";
+                    item.batchLabel = "BATCH NO";
+                    item.qtyLabel = "QTY";
+                }
+            });
+
             const fileInput = document.getElementById('excelInput'); const fileName = fileInput.files.length > 0 ? fileInput.files[0].name : "DATA.XLSX"; document.getElementById('excelText').innerText = fileName; document.getElementById('excelText').style.color = '#1D1D1F'; 
             const subText = document.getElementById('excelSubText'); subText.innerText = `DATA LOADED (GHOSTS: ${finalData.length})`; subText.classList.remove('hidden');
             document.getElementById('excelZone').style.borderColor = "#34C759"; document.getElementById('excelZone').style.background = "#F0FFF4"; const excelIcon = document.getElementById('excelIcon'); excelIcon.style.color = '#34C759'; excelIcon.innerHTML = `<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><path d="M9 15l2 2 4-4"></path>`; document.getElementById('clearExcelBtn').classList.remove('hidden');
@@ -1036,67 +1031,48 @@ if (areaEl) {
             }); renderGrid();
         }
 
-       function renderFilters() {
-    const sizeFiltersDiv = document.getElementById('sizeFilters'); 
-    const finishFiltersDiv = document.getElementById('finishFilters'); 
-    const bodyFiltersDiv = document.getElementById('bodyFilters'); 
-    const resetBtn = document.getElementById('resetFiltersBtn'); 
-    const advancedFiltersRow = document.getElementById('advancedFiltersRow'); 
-    const svgIcon = `<svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
-    
-    let activeData = finalData.filter(item => !item.isDeleted && item.grade === activeGrade);
-    if (activeData.length === 0) { filterWrapper.classList.add('hidden'); filterWrapper.classList.remove('flex'); return; }
+        function renderFilters() {
+            const sizeFiltersDiv = document.getElementById('sizeFilters'); const finishFiltersDiv = document.getElementById('finishFilters'); const bodyFiltersDiv = document.getElementById('bodyFilters'); const resetBtn = document.getElementById('resetFiltersBtn'); const advancedFiltersRow = document.getElementById('advancedFiltersRow'); 
+            const svgIcon = `<svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`;
+            
+            let activeData = finalData.filter(item => !item.isDeleted && item.grade === activeGrade);
+            if (activeData.length === 0) { filterWrapper.classList.add('hidden'); filterWrapper.classList.remove('flex'); return; }
 
-    // --- NAYA DYNAMIC LOGIC SHURU ---
-    let availableSizes = new Set();
-    let availableFinishes = new Set();
-    let availableBodies = new Set();
+            let availableSizes = new Set(); let availableFinishes = new Set(); let availableBodies = new Set();
 
-    activeData.forEach(item => {
-        // Check karte hain ki current item kin-kin selected filters se match kha raha hai
-        let matchSize = selectedSizes.size === 0 || selectedSizes.has(item.size);
-        let matchFinish = selectedFinishes.size === 0 || selectedFinishes.has(item.finish);
-        let matchBody = selectedBodies.size === 0 || selectedBodies.has(item.body);
+            activeData.forEach(item => {
+                let matchSize = selectedSizes.size === 0 || selectedSizes.has(item.size);
+                let matchFinish = selectedFinishes.size === 0 || selectedFinishes.has(item.finish);
+                let matchBody = selectedBodies.size === 0 || selectedBodies.has(item.body);
+                if (matchFinish && matchBody) availableSizes.add(item.size);
+                if (matchSize && matchBody) availableFinishes.add(item.finish);
+                if (matchSize && matchFinish) availableBodies.add(item.body);
+            });
 
-        // MAGIC TRICK: Agar baki do conditions match ho rahi hain, tabhi is category ke pill ko show list mein daalo
-        if (matchFinish && matchBody) availableSizes.add(item.size);
-        if (matchSize && matchBody) availableFinishes.add(item.finish);
-        if (matchSize && matchFinish) availableBodies.add(item.body);
-    });
-
-    // Jo options user ne select kar rakhe hain, unhe hamesha screen par rakho taaki user unhe wapas un-check kar sake
-    selectedSizes.forEach(s => availableSizes.add(s));
-    selectedFinishes.forEach(f => availableFinishes.add(f));
-    selectedBodies.forEach(b => availableBodies.add(b));
-
-    // Sets ko array mein convert karke alphabetically sort kar do
-    let sizes = [...availableSizes].filter(Boolean).sort(); 
-    let finishes = [...availableFinishes].filter(Boolean).sort(); 
-    let bodies = [...availableBodies].filter(Boolean).sort();
-    // --- NAYA DYNAMIC LOGIC KHATAM ---
-
-    if (sizes.length <= 1 && finishes.length <= 1 && bodies.length <= 1) { filterWrapper.classList.add('hidden'); filterWrapper.classList.remove('flex'); return; }
-    
-    filterWrapper.classList.remove('hidden'); filterWrapper.classList.add('flex');
-    if (selectedSizes.size > 0 || selectedFinishes.size > 0 || selectedBodies.size > 0) { resetBtn.classList.remove('opacity-0', 'pointer-events-none'); } else { resetBtn.classList.add('opacity-0', 'pointer-events-none'); }
-    
-    let sizeHtml = sizes.length > 0 ? `<button class="pro-pill ${selectedSizes.size === 0 ? 'active' : ''}" onclick="resetSizeFilters()">${svgIcon} ALL SIZES</button>` : ''; 
-    sizes.forEach(s => { sizeHtml += `<button class="pro-pill ${selectedSizes.has(s) ? 'active' : ''}" onclick="toggleSizeFilter('${s}')">${svgIcon} ${s}</button>`; }); 
-    sizeFiltersDiv.innerHTML = sizeHtml;
-    
-    let finishHtml = finishes.length > 0 ? `<button class="pro-pill ${selectedFinishes.size === 0 ? 'active' : ''}" onclick="resetFinishFilters()">${svgIcon} ALL SURFACES</button>` : ''; 
-    finishes.forEach(f => { finishHtml += `<button class="pro-pill ${selectedFinishes.has(f) ? 'active' : ''}" onclick="toggleFinishFilter('${f}')">${svgIcon} ${f}</button>`; }); 
-    finishFiltersDiv.innerHTML = finishHtml;
-    
-    if (bodies.length <= 1 && selectedBodies.size === 0) { 
-        advancedFiltersRow.style.display = 'none'; bodyFiltersDiv.innerHTML = ''; 
-    } else { 
-        advancedFiltersRow.style.display = 'flex'; 
-        let bodyHtml = `<button class="pro-pill ${selectedBodies.size === 0 ? 'active' : ''}" onclick="resetBodyFilters()">${svgIcon} ALL BODIES</button>`; 
-        bodies.forEach(b => { bodyHtml += `<button class="pro-pill ${selectedBodies.has(b) ? 'active' : ''}" onclick="toggleBodyFilter('${b}')">${svgIcon} ${b}</button>`; }); 
-        bodyFiltersDiv.innerHTML = bodyHtml; 
-    }
-}
+            selectedSizes.forEach(s => availableSizes.add(s)); selectedFinishes.forEach(f => availableFinishes.add(f)); selectedBodies.forEach(b => availableBodies.add(b));
+            let sizes = [...availableSizes].filter(Boolean).sort(); let finishes = [...availableFinishes].filter(Boolean).sort(); let bodies = [...availableBodies].filter(Boolean).sort();
+            if (sizes.length <= 1 && finishes.length <= 1 && bodies.length <= 1) { filterWrapper.classList.add('hidden'); filterWrapper.classList.remove('flex'); return; }
+            
+            filterWrapper.classList.remove('hidden'); filterWrapper.classList.add('flex');
+            if (selectedSizes.size > 0 || selectedFinishes.size > 0 || selectedBodies.size > 0) { resetBtn.classList.remove('opacity-0', 'pointer-events-none'); } else { resetBtn.classList.add('opacity-0', 'pointer-events-none'); }
+            
+            let sizeHtml = sizes.length > 0 ? `<button class="pro-pill ${selectedSizes.size === 0 ? 'active' : ''}" onclick="resetSizeFilters()">${svgIcon} ALL SIZES</button>` : ''; 
+            sizes.forEach(s => { sizeHtml += `<button class="pro-pill ${selectedSizes.has(s) ? 'active' : ''}" onclick="toggleSizeFilter('${s}')">${svgIcon} ${s}</button>`; }); 
+            sizeFiltersDiv.innerHTML = sizeHtml;
+            
+            let finishHtml = finishes.length > 0 ? `<button class="pro-pill ${selectedFinishes.size === 0 ? 'active' : ''}" onclick="resetFinishFilters()">${svgIcon} ALL SURFACES</button>` : ''; 
+            finishes.forEach(f => { finishHtml += `<button class="pro-pill ${selectedFinishes.has(f) ? 'active' : ''}" onclick="toggleFinishFilter('${f}')">${svgIcon} ${f}</button>`; }); 
+            finishFiltersDiv.innerHTML = finishHtml;
+            
+            if (bodies.length <= 1 && selectedBodies.size === 0) { 
+                advancedFiltersRow.style.display = 'none'; bodyFiltersDiv.innerHTML = ''; 
+            } else { 
+                advancedFiltersRow.style.display = 'flex'; 
+                let bodyHtml = `<button class="pro-pill ${selectedBodies.size === 0 ? 'active' : ''}" onclick="resetBodyFilters()">${svgIcon} ALL BODIES</button>`; 
+                bodies.forEach(b => { bodyHtml += `<button class="pro-pill ${selectedBodies.has(b) ? 'active' : ''}" onclick="toggleBodyFilter('${b}')">${svgIcon} ${b}</button>`; }); 
+                bodyFiltersDiv.innerHTML = bodyHtml; 
+            }
+        }
 
         function resetAllFilters() { selectedSizes.clear(); selectedFinishes.clear(); selectedBodies.clear(); renderFilters(); applyVisibility(); }
         function resetSizeFilters() { selectedSizes.clear(); renderFilters(); applyVisibility(); }
@@ -1109,92 +1085,52 @@ if (areaEl) {
         let filterTimeout; 
         function applyVisibility(skipAnimation = false) {
             if (filterTimeout) clearTimeout(filterTimeout);
-            let visibleCount = 0; let missingCount = 0; let visibleCards = []; 
-            let visibleSizesSet = new Set(); 
+            let visibleCount = 0; let missingCount = 0; let visibleCards = []; let visibleSizesSet = new Set(); 
 
-     finalData.forEach((item, index) => {
-    // Faltu ki mehnat band! Seedha memory (cache) se element uthao.
-    const wrapper = item.domWrapper; 
-    if (!wrapper) return;
-    
-    // 1. Pehle saare normal filters check karo (Missing filter ko chhod kar)
-    let showBySize = selectedSizes.size === 0 || selectedSizes.has(item.size); 
-    let showByFinish = selectedFinishes.size === 0 || selectedFinishes.has(item.finish); 
-    let showByBody = selectedBodies.size === 0 || selectedBodies.has(item.body); 
-    let showByGrade = item.grade === activeGrade; 
-    let showByQty = item.totalQty >= minBoxQty && item.totalQty <= maxBoxQty;
+            finalData.forEach((item, index) => {
+                const wrapper = item.domWrapper; if (!wrapper) return;
+                
+                let showBySize = selectedSizes.size === 0 || selectedSizes.has(item.size); 
+                let showByFinish = selectedFinishes.size === 0 || selectedFinishes.has(item.finish); 
+                let showByBody = selectedBodies.size === 0 || selectedBodies.has(item.body); 
+                let showByGrade = item.grade === activeGrade; 
+                let showByQty = item.totalQty >= minBoxQty && item.totalQty <= maxBoxQty;
 
-    let meetsAllFilters = !item.isDeleted && showBySize && showByFinish && showByBody && showByGrade && showByQty;
+                let meetsAllFilters = !item.isDeleted && showBySize && showByFinish && showByBody && showByGrade && showByQty;
 
-    // 2. Agar tile in filters ko pass karti hai AUR uski image missing hai, tabhi missingCount badhao
-    if (meetsAllFilters && !item.matchedFile) { 
-        missingCount++; 
-    }
+                if (meetsAllFilters && !item.matchedFile) { missingCount++; }
 
-    // 3. Ab final decision lo ki card ko screen par dikhana hai ya hide karna hai
-    let showByMissing = isMissingFilterOn ? (!item.matchedFile) : true; 
-    let shouldShow = meetsAllFilters && showByMissing;
+                let showByMissing = isMissingFilterOn ? (!item.matchedFile) : true; 
+                let shouldShow = meetsAllFilters && showByMissing;
 
-  if (shouldShow) { 
-        wrapper.classList.remove('hidden-item'); 
-        
-        // NAYA LOGIC: Agar skipAnimation true hai, toh opacity 1 rakho aur animation mat hatao
-        if (!skipAnimation) {
-            wrapper.classList.remove('animate-in'); 
-            wrapper.style.opacity = '0'; 
-        } else {
-            wrapper.style.opacity = '1';
-            wrapper.classList.add('animate-in');
-        }
-        
-        visibleCards.push(wrapper); 
-        visibleCount++; 
-        visibleSizesSet.add(item.size.toUpperCase().replace(/\s+/g, '')); 
-    } else { 
-        wrapper.classList.add('hidden-item'); 
-        wrapper.classList.remove('animate-in'); 
-        wrapper.style.animationDelay = '0ms'; 
-    }
-});
+                if (shouldShow) { 
+                    wrapper.classList.remove('hidden-item'); 
+                    if (!skipAnimation) { wrapper.classList.remove('animate-in'); wrapper.style.opacity = '0'; } 
+                    else { wrapper.style.opacity = '1'; wrapper.classList.add('animate-in'); }
+                    visibleCards.push(wrapper); visibleCount++; visibleSizesSet.add(item.size.toUpperCase().replace(/\s+/g, '')); 
+                } else { 
+                    wrapper.classList.add('hidden-item'); wrapper.classList.remove('animate-in'); wrapper.style.animationDelay = '0ms'; 
+                }
+            });
 
             document.querySelectorAll('.cover-card-item').forEach(coverCard => {
                 let badge = coverCard.querySelector('.egrade');
                 if(badge) {
                     let gClass = 'prm'; let gVal = 'PRM';
-                    if(activeGrade === 'STD') { gClass = 'std'; gVal = 'STD'; } 
-                    else if(activeGrade === 'GOLD') { gClass = 'gold'; gVal = 'GOLD'; } 
-                    else if(activeGrade === 'ECO') { gClass = 'eco'; gVal = 'ECO'; }
-                    badge.className = `egrade ${gClass} ${!isCoverGradeEnabled ? 'hidden-element' : ''}`; 
-                    badge.innerHTML = `<span>GRADE</span><span class="egrade-sep">·</span><span class="egrade-val">${gVal}</span>`;
+                    if(activeGrade === 'STD') { gClass = 'std'; gVal = 'STD'; } else if(activeGrade === 'GOLD') { gClass = 'gold'; gVal = 'GOLD'; } else if(activeGrade === 'ECO') { gClass = 'eco'; gVal = 'ECO'; }
+                    badge.className = `egrade ${gClass} ${!isCoverGradeEnabled ? 'hidden-element' : ''}`; badge.innerHTML = `<span>GRADE</span><span class="egrade-sep">·</span><span class="egrade-val">${gVal}</span>`;
                 }
 
-               const sizeKey = coverCard.dataset.size;
-                const isCoverDeleted = deletedCoverPages.has(sizeKey);
+                const sizeKey = coverCard.dataset.size; const isCoverDeleted = deletedCoverPages.has(sizeKey);
 
-            if (visibleSizesSet.has(sizeKey) && !isCoverDeleted) {
-            coverCard.classList.remove('hidden-item'); 
-            
-            // SAHI LOGIC: Agar animation skip karni hai, toh koi class mat lagao, bas dikhne do.
-            if (!skipAnimation) {
-                coverCard.classList.remove('animate-in'); 
-                coverCard.style.opacity = '0'; 
-            } else {
-                coverCard.style.opacity = '1';
-                coverCard.classList.remove('animate-in'); // <-- Yahan remove hoga, add nahi
-            }
-            
-            if (isMasterCoverEnabled) {
-                visibleCards.push(coverCard);
-            }
-        } else {
-                    coverCard.classList.add('hidden-item'); coverCard.classList.remove('animate-in'); coverCard.style.animationDelay = '0ms'; 
-                }
+                if (visibleSizesSet.has(sizeKey) && !isCoverDeleted) {
+                    coverCard.classList.remove('hidden-item'); 
+                    if (!skipAnimation) { coverCard.classList.remove('animate-in'); coverCard.style.opacity = '0'; } 
+                    else { coverCard.style.opacity = '1'; coverCard.classList.remove('animate-in'); }
+                    if (isMasterCoverEnabled) { visibleCards.push(coverCard); }
+                } else { coverCard.classList.add('hidden-item'); coverCard.classList.remove('animate-in'); coverCard.style.animationDelay = '0ms'; }
                 
-                if (!isMasterCoverEnabled) {
-                    coverCard.classList.add('disabled-card');
-                } else {
-                    coverCard.classList.remove('disabled-card');
-                }
+                if (!isMasterCoverEnabled) { coverCard.classList.add('disabled-card'); } else { coverCard.classList.remove('disabled-card'); }
             });
 
             let emptyStateMsg = document.getElementById('emptyStateMsg');
@@ -1208,202 +1144,112 @@ if (areaEl) {
             generateBtn.disabled = (visibleCount === 0 || !fontsOK);
 
             if (visibleCount > 0) {
-                let coverPagesCount = visibleSizesSet.size;
-                let actualImagesSizeMB = 0;
-                
-                finalData.forEach((item, index) => {
-                    const wrapper = document.getElementById(`wrapper-${index}`);
-                    if (wrapper && !wrapper.classList.contains('hidden-item')) {
-                        if (item.matchedFile && item.matchedFile.size) {
-                            actualImagesSizeMB += (item.matchedFile.size / (1024 * 1024));
-                        }
-                    }
-                });
+                let coverPagesCount = visibleSizesSet.size; let actualImagesSizeMB = 0;
+                finalData.forEach((item, index) => { const wrapper = document.getElementById(`wrapper-${index}`); if (wrapper && !wrapper.classList.contains('hidden-item')) { if (item.matchedFile && item.matchedFile.size) { actualImagesSizeMB += (item.matchedFile.size / (1024 * 1024)); } } });
+                let estimatedMB = 0.10 + (coverPagesCount * 0.10) + (actualImagesSizeMB * 0.85); generateBtn.innerText = `Export PDF (~ ${estimatedMB.toFixed(2)} MB)`;
+            } else { generateBtn.innerText = "Export PDF Catalog"; }
 
-                let estimatedMB = 0.10 + (coverPagesCount * 0.10) + (actualImagesSizeMB * 0.85);
-                generateBtn.innerText = `Export PDF (~ ${estimatedMB.toFixed(2)} MB)`;
-            } else {
-                generateBtn.innerText = "Export PDF Catalog";
-            }
-
-         if (!skipAnimation) {
-        filterTimeout = setTimeout(() => { visibleCards.forEach((card, i) => { if (i < 12) { card.style.animationDelay = `${i * 35}ms`; } else { card.style.animationDelay = '0ms'; } card.classList.add('animate-in'); }); }, 10);
-    }
-}
+            if (!skipAnimation) { filterTimeout = setTimeout(() => { visibleCards.forEach((card, i) => { if (i < 12) { card.style.animationDelay = `${i * 35}ms`; } else { card.style.animationDelay = '0ms'; } card.classList.add('animate-in'); }); }, 10); }
+        }
 
         function updateUndoButton() { const btn = document.getElementById('undoBtn'); if (deletedStack.length > 0) { btn.classList.remove('opacity-0', 'pointer-events-none'); } else { btn.classList.add('opacity-0', 'pointer-events-none'); } }
-  function deleteCoverCard(size) {
-    // Pehle HTML page par se us cover card ko dhundho
-    const coverCard = document.querySelector(`.cover-card-item[data-size="${size}"]`);
-    
-    if (coverCard) {
-        const currentHeight = coverCard.offsetHeight;
-        coverCard.style.height = currentHeight + 'px';
-        coverCard.style.overflow = 'hidden';
-        coverCard.style.transition = 'all 0.4s cubic-bezier(0.25, 1, 0.5, 1)';
-
-        setTimeout(() => {
-            coverCard.style.opacity = '0';
-            coverCard.style.transform = 'scale(0.85) translateY(-20px)';
-            coverCard.style.height = '0px';
-            coverCard.style.marginBottom = '0px';
-        }, 10);
-    }
-
-    setTimeout(() => {
-        deletedCoverPages.add(size);
-        deletedStack.push({ type: 'cover', size: size }); 
-        updateUndoButton();
-        applyVisibility(true);
-
-        // Undo cleanup
-        if (coverCard) {
-            coverCard.style.height = '';
-            coverCard.style.marginBottom = '';
-            coverCard.style.overflow = '';
-            coverCard.style.transform = '';
-        }
-    }, 400);
-}
-
-function undoLastDelete() { 
-    if (deletedStack.length === 0) return; 
-    const last = deletedStack.pop(); 
-    
-    // Check if the undone item is a cover page
-    if (last && last.type === 'cover') {
-        deletedCoverPages.delete(last.size);
-        updateUndoButton();
-        applyVisibility();
-        return;
-    }
-
-    // Existing logic for normal tile cards
-    const gKey = last; 
-    const itemIndex = finalData.findIndex(item => item.groupKey === gKey); 
-    let restoredGrade = activeGrade; 
-    if (itemIndex !== -1) { 
-        finalData[itemIndex].isDeleted = false; 
-        saveToPersistent(itemIndex); 
-        restoredGrade = finalData[itemIndex].grade; 
-    } else if (persistentState[gKey]) { 
-        persistentState[gKey].isDeleted = false; 
-    } 
-    updateUndoButton(); 
-    if (restoredGrade !== activeGrade) { 
-        setGrade(restoredGrade); 
-    } else { 
-        renderFilters(); 
-        applyVisibility(); 
-    } 
-}
-function deleteCard(index) { 
-    const wrapper = finalData[index].domWrapper || document.getElementById(`wrapper-${index}`);
-    
-    if (wrapper) {
-        // 1. Pehle card ki actual height ko fix karo taaki CSS smoothly kaam kare
-        const currentHeight = wrapper.offsetHeight;
-        wrapper.style.height = currentHeight + 'px';
-        wrapper.style.overflow = 'hidden'; // Content ko bahar aane se roko
         
-        // 2. Apple-style smooth animation apply karo (0.4 seconds)
-        wrapper.style.transition = 'all 0.4s cubic-bezier(0.25, 1, 0.5, 1)';
-
-        // 3. Turant baad sab kuch 0 kar do (Height, Margin, Opacity, Scale)
-        setTimeout(() => {
-            wrapper.style.opacity = '0';
-            wrapper.style.transform = 'scale(0.85) translateY(-20px)';
-            wrapper.style.height = '0px';
-            wrapper.style.marginBottom = '0px';
-        }, 10);
-    }
-
-    // 4. Animation poori hone ke baad (400ms), actual data update karo
-    setTimeout(() => {
-        finalData[index].isDeleted = true; 
-        saveToPersistent(index); 
-        deletedStack.push(finalData[index].groupKey); 
-        updateUndoButton(); 
-        renderFilters(); 
-        applyVisibility(true); // 'true' taaki refresh flash na ho
-        
-        // 5. Cleanup: Agar user 'UNDO' kare, toh card wapas apni original height mein aaye
-        if (wrapper) {
-            wrapper.style.height = '';
-            wrapper.style.marginBottom = '';
-            wrapper.style.overflow = '';
-            wrapper.style.transform = '';
+        function deleteCoverCard(size) {
+            const coverCard = document.querySelector(`.cover-card-item[data-size="${size}"]`);
+            if (coverCard) { const currentHeight = coverCard.offsetHeight; coverCard.style.height = currentHeight + 'px'; coverCard.style.overflow = 'hidden'; coverCard.style.transition = 'all 0.4s cubic-bezier(0.25, 1, 0.5, 1)';
+                setTimeout(() => { coverCard.style.opacity = '0'; coverCard.style.transform = 'scale(0.85) translateY(-20px)'; coverCard.style.height = '0px'; coverCard.style.marginBottom = '0px'; }, 10);
+            }
+            setTimeout(() => { deletedCoverPages.add(size); deletedStack.push({ type: 'cover', size: size }); updateUndoButton(); applyVisibility(true);
+                if (coverCard) { coverCard.style.height = ''; coverCard.style.marginBottom = ''; coverCard.style.overflow = ''; coverCard.style.transform = ''; }
+            }, 400);
         }
-    }, 400);
-}
+
+        function undoLastDelete() { 
+            if (deletedStack.length === 0) return; 
+            const last = deletedStack.pop(); 
+            if (last && last.type === 'cover') { deletedCoverPages.delete(last.size); updateUndoButton(); applyVisibility(); return; }
+            const gKey = last; const itemIndex = finalData.findIndex(item => item.groupKey === gKey); let restoredGrade = activeGrade; 
+            if (itemIndex !== -1) { finalData[itemIndex].isDeleted = false; saveToPersistent(itemIndex); restoredGrade = finalData[itemIndex].grade; } else if (persistentState[gKey]) { persistentState[gKey].isDeleted = false; } 
+            updateUndoButton(); if (restoredGrade !== activeGrade) { setGrade(restoredGrade); } else { renderFilters(); applyVisibility(); } 
+        }
+
+        function deleteCard(index) { 
+            const wrapper = finalData[index].domWrapper || document.getElementById(`wrapper-${index}`);
+            if (wrapper) { const currentHeight = wrapper.offsetHeight; wrapper.style.height = currentHeight + 'px'; wrapper.style.overflow = 'hidden'; wrapper.style.transition = 'all 0.4s cubic-bezier(0.25, 1, 0.5, 1)';
+                setTimeout(() => { wrapper.style.opacity = '0'; wrapper.style.transform = 'scale(0.85) translateY(-20px)'; wrapper.style.height = '0px'; wrapper.style.marginBottom = '0px'; }, 10);
+            }
+            setTimeout(() => { finalData[index].isDeleted = true; saveToPersistent(index); deletedStack.push(finalData[index].groupKey); updateUndoButton(); renderFilters(); applyVisibility(true); 
+                if (wrapper) { wrapper.style.height = ''; wrapper.style.marginBottom = ''; wrapper.style.overflow = ''; wrapper.style.transform = ''; }
+            }, 400);
+        }
+
         function handleEdit(index, field, element) { let newValue = element.innerText.replace(/(\r\n|\n|\r)/gm, " ").trim(); if(newValue === '') { element.innerText = finalData[index][field].toUpperCase(); return; } newValue = newValue.toUpperCase(); if(finalData[index][field].toUpperCase() !== newValue) { finalData[index][field] = newValue; saveToPersistent(index); if(field === 'size' || field === 'finish' || field === 'body') { renderFilters(); applyVisibility(); } } }
         function handlePaste(e) { e.preventDefault(); let text = (e.originalEvent || e).clipboardData.getData('text/plain'); text = text.replace(/(\r\n|\n|\r)/gm, " ").trim(); document.execCommand('insertText', false, text); }
         function removeImage(e, index) { e.stopPropagation(); finalData[index].matchedFile = null; finalData[index].blobUrl = null; saveToPersistent(index, true); const imgBox = document.getElementById(`imgBox-${index}`); if(imgBox) { imgBox.innerHTML = `<div style="height:200px; display:flex; flex-direction:column; align-items:center; justify-content:center; color:#999; cursor:pointer; background:#FAFAFC; border-radius:4px;" onclick="triggerImageUpload(${index})"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg><span style="font-size:10px; margin-top:5px; font-family:'Inter', sans-serif;">CLICK OR DROP IMAGE</span></div>`; } const warnBadge = document.getElementById(`warn-${index}`); if(warnBadge) warnBadge.style.display = 'block'; const wrapper = document.getElementById(`wrapper-${index}`); if(wrapper) { wrapper.dataset.hasImage = "false"; applyVisibility(); } }
 
-function getCoverCardHTML(cleanSize, gradeStr) {
-    const sku = SKU_MASTER[cleanSize] || { pcs: '-', sqft: '-', kg: '-' };
-    const parts = cleanSize.replace('MM','').split('X');
-    let midHtml = '';
-    
-    parts.forEach((p,i) => {
-        const isT = parts.length > 2 && i === parts.length - 1;
-        midHtml += `<span class="${isT ? 'et' : 'en'}" data-role="num" style="font-size:175px; letter-spacing:-5px; line-height:0.85; color:${isT?'var(--brand-glow)':'rgba(255,255,255,0.95)'}; font-family:'Bebas Neue', cursive;">${p}</span>`;
-        if (i < parts.length - 1) {
-            midHtml += `<span class="ex" data-role="sep" style="font-size:80px; font-weight:200; color:rgba(255,255,255,0.45); margin:0 4px; font-family:'Inter', sans-serif;">\u00D7</span>`;
-        }
-    });
-    midHtml += `<span class="emm" data-role="unit" style="font-size:28px; font-style:italic; font-family:'Cormorant Garamond', serif; color:rgba(255,255,255,0.75); margin-left:7px;">mm</span>`;
+        function getCoverCardHTML(cleanSize, gradeStr) {
+            const sku = SKU_MASTER[cleanSize] || { pcs: '-', sqft: '-', kg: '-' };
+            const parts = cleanSize.replace('MM','').split('X');
+            let midHtml = '';
+            
+            parts.forEach((p,i) => {
+                const isT = parts.length > 2 && i === parts.length - 1;
+                midHtml += `<span class="${isT ? 'et' : 'en'}" data-role="num" style="font-size:175px; letter-spacing:-5px; line-height:0.85; color:${isT?'var(--brand-glow)':'rgba(255,255,255,0.95)'}; font-family:'Bebas Neue', cursive;">${p}</span>`;
+                if (i < parts.length - 1) {
+                    midHtml += `<span class="ex" data-role="sep" style="font-size:80px; font-weight:200; color:rgba(255,255,255,0.45); margin:0 4px; font-family:'Inter', sans-serif;">\u00D7</span>`;
+                }
+            });
+            midHtml += `<span class="emm" data-role="unit" style="font-size:28px; font-style:italic; font-family:'Cormorant Garamond', serif; color:rgba(255,255,255,0.75); margin-left:7px;">mm</span>`;
 
-    let gClass = 'prm'; let gVal = 'PRM';
-    if(gradeStr === 'STD') { gClass = 'std'; gVal = 'STD'; } if(gradeStr === 'GOLD') { gClass = 'gold'; gVal = 'GOLD'; } if(gradeStr === 'ECO') { gClass = 'eco'; gVal = 'ECO'; }
+            let gClass = 'prm'; let gVal = 'PRM';
+            if(gradeStr === 'STD') { gClass = 'std'; gVal = 'STD'; } if(gradeStr === 'GOLD') { gClass = 'gold'; gVal = 'GOLD'; } if(gradeStr === 'ECO') { gClass = 'eco'; gVal = 'ECO'; }
 
-    let areaValText = sku.sqft + ' SQFT';
-    if(sku.sqft !== '-' && coverAreaUnit === 'SQM') {
-        areaValText = (parseFloat(sku.sqft) / 10.7639).toFixed(2) + ' SQM';
-    }
+            let areaValText = sku.sqft + ' SQFT';
+            if(sku.sqft !== '-' && coverAreaUnit === 'SQM') {
+                areaValText = (parseFloat(sku.sqft) / 10.7639).toFixed(2) + ' SQM';
+            }
 
-    // NAYA LOGIC: Agar user ne pehle se edit kiya hai toh wo text uthao, nahi toh default data dikhao
-    let edits = coverEdits[cleanSize] || {};
-    let lblBox = edits.label_box !== undefined ? edits.label_box : "In Box";
-    let valPcs = edits.val_pcs !== undefined ? edits.val_pcs : `${sku.pcs} PCS`;
-    let valArea = edits.val_area !== undefined ? edits.val_area : areaValText;
-    let valKg = edits.val_kg !== undefined ? edits.val_kg : `${sku.kg} KG`;
+            let edits = coverEdits[cleanSize] || {};
+            let lblBox = edits.label_box !== undefined ? edits.label_box : "In Box";
+            let valPcs = edits.val_pcs !== undefined ? edits.val_pcs : `${sku.pcs} PCS`;
+            let valArea = edits.val_area !== undefined ? edits.val_area : areaValText;
+            let valKg = edits.val_kg !== undefined ? edits.val_kg : `${sku.kg} KG`;
 
-    return `
-   <div class="card-wrapper cover-card-item group hidden-item ${!isMasterCoverEnabled ? 'disabled-card' : ''}" data-size="${cleanSize}" style="margin-bottom: 30px; width: 100%; max-width: 650px; background: #110C0A; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); display: flex; justify-content: center; position: relative;">
-        
-        <button onclick="deleteCoverCard('${cleanSize}')" class="absolute top-4 right-4 text-white hover:text-[#FF3B30] bg-white/10 hover:bg-white/90 p-2 rounded-full backdrop-blur-md shadow-sm z-[60] opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-200" title="Delete Cover Page">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-        </button>
+            return `
+           <div class="card-wrapper cover-card-item group hidden-item ${!isMasterCoverEnabled ? 'disabled-card' : ''}" data-size="${cleanSize}" style="margin-bottom: 30px; width: 100%; max-width: 650px; background: #110C0A; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); display: flex; justify-content: center; position: relative;">
+                
+                <button onclick="deleteCoverCard('${cleanSize}')" class="absolute top-4 right-4 text-white hover:text-[#FF3B30] bg-white/10 hover:bg-white/90 p-2 rounded-full backdrop-blur-md shadow-sm z-[60] opacity-0 group-hover:opacity-100 scale-90 group-hover:scale-100 transition-all duration-200" title="Delete Cover Page">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                </button>
 
-        <div style="width: 100%; position: relative; padding-top: 38.035%;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;">
-                <div id="cover-design-${cleanSize}" class="c-ember" style="width: 794px; height: 302px; transform-origin: top left; transform: scale(0.8186);">
-                    <div class="egl"></div><div class="egr"></div><div class="ecenter"></div>
-                    <div class="ebar"></div><div class="etopline"></div>
-                    <div class="ecnt">
-                        <div class="etop">
-                            <img src="logo.svg" class="elogo ${!isCoverLogoEnabled ? 'hidden-element' : ''}" alt="Granicer">
-                            <div class="egrade ${gClass} ${!isCoverGradeEnabled ? 'hidden-element' : ''}"><span>GRADE</span><span class="egrade-sep">·</span><span class="egrade-val">${gVal}</span></div>
-                        </div>
-                        <div class="emid">
-                            ${midHtml}
-                        </div>
-                        <div class="ebot ${!isCoverFooterEnabled ? 'hidden-element' : ''}">
-                            <div class="ebox-label"><span style="cursor:text; min-width:10px; display:inline-block;" ondblclick="makeCoverEditable(this)" onblur="saveCoverEdit(this, '${cleanSize}', 'label_box')" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${lblBox}</span></div>
-                            <div class="especs">
-                                <div class="espec"><span class="esv" style="cursor:text; min-width:10px; display:inline-block;" ondblclick="makeCoverEditable(this)" onblur="saveCoverEdit(this, '${cleanSize}', 'val_pcs')" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${valPcs}</span></div>
-                                <div class="espec"><span class="esv cover-area-val" data-sqft="${sku.sqft}" style="cursor:text; min-width:10px; display:inline-block;" ondblclick="makeCoverEditable(this)" onblur="saveCoverEdit(this, '${cleanSize}', 'val_area')" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${valArea}</span></div>
-                                <div class="espec"><span class="esv" style="cursor:text; min-width:10px; display:inline-block;" ondblclick="makeCoverEditable(this)" onblur="saveCoverEdit(this, '${cleanSize}', 'val_kg')" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${valKg}</span></div>
+                <div style="width: 100%; position: relative; padding-top: 38.035%;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden;">
+                        <div id="cover-design-${cleanSize}" class="c-ember" style="width: 794px; height: 302px; transform-origin: top left; transform: scale(0.8186);">
+                            <div class="egl"></div><div class="egr"></div><div class="ecenter"></div>
+                            <div class="ebar"></div><div class="etopline"></div>
+                            <div class="ecnt">
+                                <div class="etop">
+                                    <img src="logo.svg" class="elogo ${!isCoverLogoEnabled ? 'hidden-element' : ''}" alt="Granicer">
+                                    <div class="egrade ${gClass} ${!isCoverGradeEnabled ? 'hidden-element' : ''}"><span>GRADE</span><span class="egrade-sep">·</span><span class="egrade-val">${gVal}</span></div>
+                                </div>
+                                <div class="emid">
+                                    ${midHtml}
+                                </div>
+                                <div class="ebot ${!isCoverFooterEnabled ? 'hidden-element' : ''}">
+                                    <div class="ebox-label"><span style="cursor:text; min-width:10px; display:inline-block;" ondblclick="makeCoverEditable(this)" onblur="saveCoverEdit(this, '${cleanSize}', 'label_box')" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${lblBox}</span></div>
+                                    <div class="especs">
+                                        <div class="espec"><span class="esv" style="cursor:text; min-width:10px; display:inline-block;" ondblclick="makeCoverEditable(this)" onblur="saveCoverEdit(this, '${cleanSize}', 'val_pcs')" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${valPcs}</span></div>
+                                        <div class="espec"><span class="esv cover-area-val" data-sqft="${sku.sqft}" style="cursor:text; min-width:10px; display:inline-block;" ondblclick="makeCoverEditable(this)" onblur="saveCoverEdit(this, '${cleanSize}', 'val_area')" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${valArea}</span></div>
+                                        <div class="espec"><span class="esv" style="cursor:text; min-width:10px; display:inline-block;" ondblclick="makeCoverEditable(this)" onblur="saveCoverEdit(this, '${cleanSize}', 'val_kg')" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${valKg}</span></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    `;
-}
+            `;
+        }
 
         function renderGrid() {
             mainContainer.innerHTML = ""; const fragment = document.createDocumentFragment();
@@ -1426,14 +1272,8 @@ function getCoverCardHTML(cleanSize, gradeStr) {
             });
             
             mainContainer.appendChild(fragment); 
-            // --- NAYA CODE: DOM Caching (Har card ka HTML element memory me save kar lo) ---
-    finalData.forEach((item, index) => {
-        item.domWrapper = document.getElementById(`wrapper-${index}`);
-    });
-
-            document.querySelectorAll('.cover-card-item .emid').forEach(midEl => {
-                fitMid(midEl, 712, 175, 80, 28);
-            });
+            finalData.forEach((item, index) => { item.domWrapper = document.getElementById(`wrapper-${index}`); });
+            document.querySelectorAll('.cover-card-item .emid').forEach(midEl => { fitMid(midEl, 712, 175, 80, 28); });
 
             renderFilters(); applyVisibility(); statusMsg.innerText = "Ready";
             setTimeout(() => preCoverCards(), 800);
@@ -1451,16 +1291,34 @@ function getCoverCardHTML(cleanSize, gradeStr) {
             }
 
             let deleteBtnHtml = `<button onclick="deleteCard(${index})" class="delete-btn absolute top-3 right-3 text-gray-400 hover:text-[#FF3B30] bg-white/80 p-1.5 rounded-full backdrop-blur-sm shadow-sm z-10" title="Delete Card"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg></button>`;
-            let batchRowsHtml = "";
-            if(item.batches && item.batches.length > 0) { item.batches.forEach(b => { batchRowsHtml += `<div style="display:grid; grid-template-columns: 1fr 1fr 1fr; font-size:11px; margin-top:5px; color:#1C1C1E; font-weight:normal;"><div style="text-align: left;">${b.boxPack}</div><div style="text-align: center;">${b.batchNo}</div><div style="text-align: center;">${b.qty}</div></div>`; }); }
-
+            
             let commonLeftTop = `<div style="font-family:'Times New Roman', Times, serif; font-weight:bold; font-size:18px; color:#1C1C1E; letter-spacing:1.3px; text-transform:uppercase;"><span class="editable-text" contenteditable="true" spellcheck="false" onblur="handleEdit(${index}, 'design', this)" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${item.design}</span></div><div style="display:flex; align-items:center; margin-top:6px; font-size:10px; letter-spacing:0.5px;"><span style="color:#6E6E73;">SIZE: <span class="editable-text" style="color:#1C1C1E;" contenteditable="true" spellcheck="false" onblur="handleEdit(${index}, 'size', this)" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${item.size}</span></span><span style="color:rgb(180, 180, 180); font-size:16px; position:relative; top:1px; margin:0 5px;">•</span><span style="color:#6E6E73;">SURFACE: <span class="editable-text" style="color:#1C1C1E;" contenteditable="true" spellcheck="false" onblur="handleEdit(${index}, 'finish', this)" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${item.finish}</span></span><span style="color:rgb(180, 180, 180); font-size:16px; position:relative; top:1px; margin:0 5px;">•</span><span style="color:#6E6E73;">BODY: <span class="editable-text" style="color:#1C1C1E;" contenteditable="true" spellcheck="false" onblur="handleEdit(${index}, 'body', this)" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${item.body}</span></span></div>`;
             let rightSide = `<div style="flex:0 0 21.4%; border-left:1px solid #E5E5E5; display:flex; flex-direction:column; align-items:center; justify-content:center;"><div style="font-size:32px; font-weight:bold; color:#1C1C1E; line-height:1;">${item.totalQty}</div><div style="font-size:9px; font-weight:normal; color:#BE963C; letter-spacing:1.5px; margin-top:4px;">BOXES</div></div>`;
 
             if (!isAdvanceMode) {
                 return `${deleteBtnHtml}${warningHtml}<div style="padding:12px 12px 0 12px;"><div class="preview-img-container" id="imgBox-${index}" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, ${index})">${imgHtml}</div></div><div style="height:1px; background:#BE963C; margin:10px 20px;"></div><div style="display:flex; padding:0 0 16px 0; align-items:stretch; font-family:Helvetica, Arial, sans-serif;"><div style="flex:1; padding:6px 20px;">${commonLeftTop}</div>${rightSide}</div>`;
+            } else {
+                let boxLbl = item.boxLabel || "BOX";
+                let batchLbl = item.batchLabel || "BATCH NO";
+                let qtyLbl = item.qtyLabel || "QTY";
+
+                let batchRowsHtml = "";
+                if(item.batches && item.batches.length > 0) { 
+                    item.batches.forEach((b, bIdx) => { 
+                        batchRowsHtml += `<div style="display:grid; grid-template-columns: 1fr 1fr 1fr; font-size:11px; margin-top:5px; color:#1C1C1E; font-weight:normal;">
+                            <div style="text-align: left;"><span class="editable-text" contenteditable="true" spellcheck="false" onblur="handleBatchRowEdit(${index}, ${bIdx}, 'boxPack', this)" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${b.boxPack}</span></div>
+                            <div style="text-align: center;"><span class="editable-text" contenteditable="true" spellcheck="false" onblur="handleBatchRowEdit(${index}, ${bIdx}, 'batchNo', this)" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${b.batchNo}</span></div>
+                            <div style="text-align: center;"><span class="editable-text" contenteditable="true" spellcheck="false" onblur="handleBatchRowEdit(${index}, ${bIdx}, 'qty', this)" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${b.qty}</span></div>
+                        </div>`; 
+                    }); 
+                }
+
+                return `${deleteBtnHtml}${warningHtml}<div style="padding:12px 12px 0 12px;"><div class="preview-img-container" id="imgBox-${index}" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, ${index})">${imgHtml}</div></div><div style="height:1px; background:#BE963C; margin:10px 20px;"></div><div style="display:flex; padding:0 0 16px 0; align-items:stretch; font-family:Helvetica, Arial, sans-serif;"><div style="flex:1; padding:4px 20px;">${commonLeftTop}<div style="margin-top:10px; padding-top:10px; border-top:1px dashed #E5E5E5;"><div style="display:grid; grid-template-columns: 1fr 1fr 1fr; font-size:10px; color:rgb(134, 134, 139); font-weight:bold; margin-bottom:2px;">
+                    <div style="text-align: left;"><span class="editable-text" style="color:rgb(134, 134, 139);" contenteditable="true" spellcheck="false" onblur="handleBatchHeaderEdit(${index}, 'boxLabel', this)" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${boxLbl}</span></div>
+                    <div style="text-align: center;"><span class="editable-text" style="color:rgb(134, 134, 139);" contenteditable="true" spellcheck="false" onblur="handleBatchHeaderEdit(${index}, 'batchLabel', this)" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${batchLbl}</span></div>
+                    <div style="text-align: center;"><span class="editable-text" style="color:rgb(134, 134, 139);" contenteditable="true" spellcheck="false" onblur="handleBatchHeaderEdit(${index}, 'qtyLabel', this)" onkeydown="if(event.key==='Enter'){this.blur(); event.preventDefault();}" onpaste="handlePaste(event)">${qtyLbl}</span></div>
+                </div>${batchRowsHtml}</div></div>${rightSide}</div>`;
             }
-            return `${deleteBtnHtml}${warningHtml}<div style="padding:12px 12px 0 12px;"><div class="preview-img-container" id="imgBox-${index}" ondragover="handleDragOver(event)" ondragleave="handleDragLeave(event)" ondrop="handleDrop(event, ${index})">${imgHtml}</div></div><div style="height:1px; background:#BE963C; margin:10px 20px;"></div><div style="display:flex; padding:0 0 16px 0; align-items:stretch; font-family:Helvetica, Arial, sans-serif;"><div style="flex:1; padding:4px 20px;">${commonLeftTop}<div style="margin-top:10px; padding-top:10px; border-top:1px dashed #E5E5E5;"><div style="display:grid; grid-template-columns: 1fr 1fr 1fr; font-size:10px; color:rgb(134, 134, 139); font-weight:bold; margin-bottom:2px;"><div style="text-align: left;">BOX</div><div style="text-align: center;">BATCH NO</div><div style="text-align: center;">QTY</div></div>${batchRowsHtml}</div></div>${rightSide}</div>`;
         }
 
         function handleDragOver(e) { e.preventDefault(); e.currentTarget.classList.add('drag-active'); }
@@ -1469,24 +1327,14 @@ function getCoverCardHTML(cleanSize, gradeStr) {
         function triggerImageUpload(index) { activeEditIndex = index; manualImgInput.click(); }
         manualImgInput.addEventListener('change', (e) => { if (activeEditIndex === -1 || e.target.files.length === 0) return; updateSingleCard(activeEditIndex, e.target.files[0]); manualImgInput.value = ''; });
 
-    function updateSingleCard(index, file) {
-    if (finalData[index].blobUrl) { URL.revokeObjectURL(finalData[index].blobUrl); }
-    finalData[index].matchedFile = file; 
-    finalData[index].blobUrl = URL.createObjectURL(file); 
-    saveToPersistent(index, true); 
-    
-    const imgBox = document.getElementById(`imgBox-${index}`); 
-    const warnBadge = document.getElementById(`warn-${index}`); 
-    const wrapper = document.getElementById(`wrapper-${index}`);
-    
-    if(imgBox) imgBox.innerHTML = `<img src="${finalData[index].blobUrl}" class="preview-img" loading="lazy" style="display: block; width: 100%; height: auto;"><div class="overlay flex gap-2"><button onclick="triggerImageUpload(${index})" class="bg-white/20 hover:bg-white/40 text-white px-3 py-1.5 rounded backdrop-blur-md transition-all text-[10px] font-bold tracking-wider">CHANGE</button><button onclick="removeImage(event, ${index})" class="bg-[#FF3B30]/80 hover:bg-[#FF3B30] text-white px-3 py-1.5 rounded backdrop-blur-md transition-all text-[10px] font-bold tracking-wider">REMOVE</button></div>`;
-    
-    if(warnBadge) warnBadge.style.display = 'none';
-    if(wrapper) { wrapper.dataset.hasImage = "true"; }
-    
-    // Bas ek line add karni hai taaki saare counters auto-update ho jayein!
-    applyVisibility(true);
-}
+        function updateSingleCard(index, file) {
+            if (finalData[index].blobUrl) { URL.revokeObjectURL(finalData[index].blobUrl); }
+            finalData[index].matchedFile = file; finalData[index].blobUrl = URL.createObjectURL(file); saveToPersistent(index, true); 
+            const imgBox = document.getElementById(`imgBox-${index}`); const warnBadge = document.getElementById(`warn-${index}`); const wrapper = document.getElementById(`wrapper-${index}`);
+            if(imgBox) imgBox.innerHTML = `<img src="${finalData[index].blobUrl}" class="preview-img" loading="lazy" style="display: block; width: 100%; height: auto;"><div class="overlay flex gap-2"><button onclick="triggerImageUpload(${index})" class="bg-white/20 hover:bg-white/40 text-white px-3 py-1.5 rounded backdrop-blur-md transition-all text-[10px] font-bold tracking-wider">CHANGE</button><button onclick="removeImage(event, ${index})" class="bg-[#FF3B30]/80 hover:bg-[#FF3B30] text-white px-3 py-1.5 rounded backdrop-blur-md transition-all text-[10px] font-bold tracking-wider">REMOVE</button></div>`;
+            if(warnBadge) warnBadge.style.display = 'none'; if(wrapper) { wrapper.dataset.hasImage = "true"; }
+            applyVisibility(true);
+        }
 
         function readFileData(file) { return new Promise((resolve) => { const reader = new FileReader(); reader.onload = (e) => { const img = new Image(); img.onload = () => resolve({ data: e.target.result, ratio: img.width / img.height }); img.src = e.target.result; }; reader.readAsDataURL(file); }); }
 
@@ -1507,8 +1355,6 @@ function getCoverCardHTML(cleanSize, gradeStr) {
 
             if(pdfData.length === 0) { return null; }
             
-           
-
             const { jsPDF } = window.jspdf; const doc = new jsPDF(); doc.deletePage(1); 
             const pageWidth = 210, imgMargin = 6, lineGap = 4, linePinpoint = 10;
             const cPearl = [253, 251, 247], cCharcoal = [28, 28, 30], cGold = [190, 150, 60], cGrey = [110, 110, 115];
@@ -1522,7 +1368,6 @@ function getCoverCardHTML(cleanSize, gradeStr) {
                 let itemCleanSize = item.size.toUpperCase().replace(/\s+/g, '');
 
                if (itemCleanSize !== currentSectionSize) {
-                    // Check if Master Cover is ON AND this specific cover is not deleted
                     if (isMasterCoverEnabled && !deletedCoverPages.has(itemCleanSize)) {
                         await paintFrame();
                         const designNode = document.getElementById(`cover-design-${itemCleanSize}`);
@@ -1581,9 +1426,27 @@ function getCoverCardHTML(cleanSize, gradeStr) {
                     doc.setTextColor(...cGrey); doc.text(`BODY: `, offsetX, textY, { charSpace: cSpace }); offsetX += doc.getTextWidth(`BODY: `) + (5 * cSpace);
                     doc.setTextColor(...cCharcoal); doc.text(`${item.body}`.toUpperCase(), offsetX, textY, { charSpace: cSpace });
                     textY += 4; let dashLineY = textY - 0.5; doc.setDrawColor(229, 229, 229); doc.setLineWidth(0.3); doc.setLineDashPattern([1.5, 1.5], 0); doc.line(contentMargin, dashLineY, separatorX - 5, dashLineY); doc.setLineDashPattern([], 0);
-                    textY += 5; doc.setFont("helvetica", "bold"); doc.setFontSize(8); doc.setTextColor(134, 134, 139); doc.text("BOX", contentMargin, textY); doc.text("BATCH NO", contentMargin + 50, textY, { align: "center" }); doc.text("QTY", contentMargin + 90, textY, { align: "center" });
+                    textY += 5; doc.setFont("helvetica", "bold"); doc.setFontSize(8); doc.setTextColor(134, 134, 139); 
+                    
+                    // PDF Header Mapping from state
+                    let boxLbl = String(item.boxLabel || "BOX").toUpperCase();
+                    let batchLbl = String(item.batchLabel || "BATCH NO").toUpperCase();
+                    let qtyLbl = String(item.qtyLabel || "QTY").toUpperCase();
+                    
+                    doc.text(boxLbl, contentMargin, textY); 
+                    doc.text(batchLbl, contentMargin + 50, textY, { align: "center" }); 
+                    doc.text(qtyLbl, contentMargin + 90, textY, { align: "center" });
+                    
                     doc.setFont("helvetica", "normal"); doc.setFontSize(9); doc.setTextColor(...cCharcoal); let batchY = textY + 6;
-                    item.batches.forEach(b => { doc.text(String(b.boxPack).toUpperCase(), contentMargin, batchY); doc.text(String(b.batchNo).toUpperCase(), contentMargin + 50, batchY, { align: "center" }); doc.text(String(b.qty), contentMargin + 90, batchY, { align: "center" }); batchY += 5; });
+                    
+                    // PDF Batch mapping from state
+                    item.batches.forEach(b => { 
+                        doc.text(String(b.boxPack).toUpperCase(), contentMargin, batchY); 
+                        doc.text(String(b.batchNo).toUpperCase(), contentMargin + 50, batchY, { align: "center" }); 
+                        doc.text(String(b.qty), contentMargin + 90, batchY, { align: "center" }); 
+                        batchY += 5; 
+                    });
+                    
                     doc.setDrawColor(229, 229, 229); doc.setLineWidth(0.3); let sectionBottomY = Math.max(batchY - 2, lineY + 30); doc.line(separatorX, lineY + 6, separatorX, sectionBottomY);
                     let lineMidpoint = (lineY + 6 + sectionBottomY) / 2; let adjustedMidpoint = lineMidpoint - 1.52; 
                     doc.setFont("helvetica", "bold"); doc.setTextColor(...cCharcoal); doc.setFontSize(28); doc.text(String(item.totalQty), rightCenter, adjustedMidpoint + 1, { align: "center" });
@@ -1592,7 +1455,6 @@ function getCoverCardHTML(cleanSize, gradeStr) {
             }
             
             await paintFrame();
-            
             const pdfBlob = doc.output('blob');
             const sizeInMB = (pdfBlob.size / (1024 * 1024)).toFixed(2);
             
@@ -1603,173 +1465,89 @@ function getCoverCardHTML(cleanSize, gradeStr) {
             document.getElementById('mainLogo').src = LOGO_BASE64;
         }
 
-        let bulkTargetGrade = 'PRE';
-        let bulkSelectedSizes = new Set();
-        let bulkAvailableSizes = [];
+        let bulkTargetGrade = 'PRE'; let bulkSelectedSizes = new Set(); let bulkAvailableSizes = []; let isStudioDrawerOpen = false;
 
-        let isStudioDrawerOpen = false;
-
-   function toggleStudioDrawer() {
+        function toggleStudioDrawer() {
             isStudioDrawerOpen = !isStudioDrawerOpen;
-            const drawer = document.getElementById('studioDrawerWrapper');
-            const chevron = document.getElementById('studioChevron');
-            
-            if (isStudioDrawerOpen) {
-                drawer.classList.remove('translate-x-[330px]'); 
-                drawer.classList.add('translate-x-0');
-                chevron.classList.add('rotate-180');
-                // रिफ्रेश होने वाला कोड यहाँ से हटा दिया गया है
-            } else {
-                drawer.classList.remove('translate-x-0');
-                drawer.classList.add('translate-x-[330px]'); 
-                chevron.classList.remove('rotate-180');
-            }
+            const drawer = document.getElementById('studioDrawerWrapper'); const chevron = document.getElementById('studioChevron');
+            if (isStudioDrawerOpen) { drawer.classList.remove('translate-x-[330px]'); drawer.classList.add('translate-x-0'); chevron.classList.add('rotate-180'); } 
+            else { drawer.classList.remove('translate-x-0'); drawer.classList.add('translate-x-[330px]'); chevron.classList.remove('rotate-180'); }
         }
 
-       function toggleAccordion(headerEl) {
-    const card = headerEl.parentElement;
-    const isOpen = card.classList.contains('open');
-    
-    // APPLE UX: Pehle saare khule hue cards ko smoothly band kar do
-    document.querySelectorAll('.accordion-card').forEach(c => {
-        c.classList.remove('open');
-    });
-    
-    // Jo card click kiya hai, agar wo band tha toh use khol do
-    // (Agar wo pehle se khula tha, toh upar wale step se band ho jayega)
-    if (!isOpen) {
-        card.classList.add('open');
-    }
-}
+        function toggleAccordion(headerEl) {
+            const card = headerEl.parentElement; const isOpen = card.classList.contains('open');
+            document.querySelectorAll('.accordion-card').forEach(c => { c.classList.remove('open'); });
+            if (!isOpen) { card.classList.add('open'); }
+        }
 
         function setBulkGrade(grade, index) {
-            bulkTargetGrade = grade;
-            document.getElementById('bulkGradeThumb').style.transform = `translateX(${index * 100}%)`;
-            const btns = document.querySelectorAll('.bulk-grade-btn');
-            btns.forEach(btn => btn.classList.remove('active'));
-            btns[index].classList.add('active');
-            
-            bulkSelectedSizes.clear(); 
-            renderBulkList();
+            bulkTargetGrade = grade; document.getElementById('bulkGradeThumb').style.transform = `translateX(${index * 100}%)`;
+            const btns = document.querySelectorAll('.bulk-grade-btn'); btns.forEach(btn => btn.classList.remove('active')); btns[index].classList.add('active');
+            bulkSelectedSizes.clear(); renderBulkList();
         }
 
         function renderBulkList() {
-            const listContainer = document.getElementById('bulkSizeListContainer');
-            listContainer.innerHTML = '';
-            
+            const listContainer = document.getElementById('bulkSizeListContainer'); listContainer.innerHTML = '';
             const activeItems = finalData.filter(item => item.grade === bulkTargetGrade && !item.isDeleted);
             bulkAvailableSizes = [...new Set(activeItems.map(item => item.size.toUpperCase().trim()))].sort();
 
-            if(bulkAvailableSizes.length === 0) {
-                listContainer.innerHTML = '<div class="text-center text-[#FF3B30] font-bold text-xs mt-10">No data for this grade.</div>';
-                updateBulkFooter();
-                return;
-            }
-
+            if(bulkAvailableSizes.length === 0) { listContainer.innerHTML = '<div class="text-center text-[#FF3B30] font-bold text-xs mt-10">No data for this grade.</div>'; updateBulkFooter(); return; }
             bulkAvailableSizes.forEach(size => {
                 const isSelected = bulkSelectedSizes.has(size);
                 const itemHTML = `
                     <div class="flex justify-between items-center p-2.5 rounded-[10px] transition-all duration-200 cursor-pointer ${isSelected ? 'bg-white shadow-sm border border-black/5' : 'bg-transparent hover:bg-black/5 border border-transparent'}" onclick="toggleBulkSize('${size}')">
                         <span class="text-[12px] font-bold text-[#1D1D1F] tracking-tight">${size}</span>
-                        <div class="apple-switch ${isSelected ? 'on' : ''}">
-                            <div class="apple-knob"></div>
-                        </div>
+                        <div class="apple-switch ${isSelected ? 'on' : ''}"><div class="apple-knob"></div></div>
                     </div>
                 `;
                 listContainer.insertAdjacentHTML('beforeend', itemHTML);
             });
-            
             updateBulkFooter();
         }
 
-        function toggleBulkSize(size) {
-            bulkSelectedSizes.has(size) ? bulkSelectedSizes.delete(size) : bulkSelectedSizes.add(size);
-            renderBulkList();
-        }
+        function toggleBulkSize(size) { bulkSelectedSizes.has(size) ? bulkSelectedSizes.delete(size) : bulkSelectedSizes.add(size); renderBulkList(); }
 
         function toggleBulkSelectAll() {
-            if (bulkSelectedSizes.size === bulkAvailableSizes.length) {
-                bulkSelectedSizes.clear(); 
-            } else {
-                bulkAvailableSizes.forEach(s => bulkSelectedSizes.add(s)); 
-            }
+            if (bulkSelectedSizes.size === bulkAvailableSizes.length) { bulkSelectedSizes.clear(); } 
+            else { bulkAvailableSizes.forEach(s => bulkSelectedSizes.add(s)); }
             renderBulkList();
         }
 
         function updateBulkFooter() {
-            const count = bulkSelectedSizes.size;
-            const selectAllBtn = document.getElementById('bulkSelectAllBtn');
-            if(bulkAvailableSizes.length > 0) {
-                selectAllBtn.innerText = count === bulkAvailableSizes.length ? "DESELECT ALL" : "SELECT ALL";
-            }
+            const count = bulkSelectedSizes.size; const selectAllBtn = document.getElementById('bulkSelectAllBtn');
+            if(bulkAvailableSizes.length > 0) { selectAllBtn.innerText = count === bulkAvailableSizes.length ? "DESELECT ALL" : "SELECT ALL"; }
 
-            const exportBtn = document.getElementById('bulkActionBtn');
-            const previewText = document.getElementById('bulkNamingPreview');
-            
+            const exportBtn = document.getElementById('bulkActionBtn'); const previewText = document.getElementById('bulkNamingPreview');
             let fileText = count === 1 ? "1 FILE" : `${count} FILES`;
             if (count > 0) {
-                previewText.innerHTML = `Format: [SIZE]_${bulkTargetGrade}.pdf <span class="text-[#1D1D1F] ml-1 font-extrabold">• ${fileText}</span>`;
-                exportBtn.disabled = false;
-                exportBtn.innerText = `EXPORT ${count} PDF${count > 1 ? 's' : ''}`;
+                previewText.innerHTML = `Format: [SIZE]_${bulkTargetGrade}.pdf <span class="text-[#1D1D1F] ml-1 font-extrabold">• ${fileText}</span>`; exportBtn.disabled = false; exportBtn.innerText = `EXPORT ${count} PDF${count > 1 ? 's' : ''}`;
             } else {
-                previewText.innerHTML = `Format: [SIZE]_${bulkTargetGrade}.pdf <span class="ml-1 opacity-60">• 0 FILES</span>`;
-                exportBtn.disabled = true;
-                exportBtn.innerText = "SELECT SIZES";
+                previewText.innerHTML = `Format: [SIZE]_${bulkTargetGrade}.pdf <span class="ml-1 opacity-60">• 0 FILES</span>`; exportBtn.disabled = true; exportBtn.innerText = "SELECT SIZES";
             }
         }
         
         async function executeBulkExport() {
             if(bulkSelectedSizes.size === 0) return;
-            
-            const exportBtn = document.getElementById('bulkActionBtn');
-            const originalText = exportBtn.innerText;
+            const exportBtn = document.getElementById('bulkActionBtn'); const originalText = exportBtn.innerText;
             exportBtn.innerHTML = `<svg class="animate-spin -ml-1 mr-2 h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> EXPORTING...`;
             exportBtn.style.pointerEvents = 'none';
 
-            const prevGrade = activeGrade;
-            const prevSizes = new Set(selectedSizes);
-            const prevFinishes = new Set(selectedFinishes);
-            const prevBodies = new Set(selectedBodies);
-
-            setGrade(bulkTargetGrade);
-            selectedFinishes.clear(); 
-            selectedBodies.clear();
-
+            const prevGrade = activeGrade; const prevSizes = new Set(selectedSizes); const prevFinishes = new Set(selectedFinishes); const prevBodies = new Set(selectedBodies);
+            setGrade(bulkTargetGrade); selectedFinishes.clear(); selectedBodies.clear();
             const sizesArray = Array.from(bulkSelectedSizes);
 
             for (let i = 0; i < sizesArray.length; i++) {
-                const currentSize = sizesArray[i];
-                
-                selectedSizes.clear();
-                selectedSizes.add(currentSize);
-                applyVisibility(); 
-                
+                const currentSize = sizesArray[i]; selectedSizes.clear(); selectedSizes.add(currentSize); applyVisibility(); 
                 await new Promise(resolve => setTimeout(resolve, 150)); 
-                
                 try {
                     const pdfResultData = await createPDF();
-                    if (pdfResultData && pdfResultData.doc) {
-                        let cleanFileName = `${currentSize}_${bulkTargetGrade}.pdf`.replace(/\s+/g, '');
-                        pdfResultData.doc.save(cleanFileName);
-                    }
-                } catch (error) {
-                    console.error(`Error saving ${currentSize}:`, error);
-                }
+                    if (pdfResultData && pdfResultData.doc) { let cleanFileName = `${currentSize}_${bulkTargetGrade}.pdf`.replace(/\s+/g, ''); pdfResultData.doc.save(cleanFileName); }
+                } catch (error) { console.error(`Error saving ${currentSize}:`, error); }
             }
 
-            setGrade(prevGrade);
-            selectedSizes = prevSizes;
-            selectedFinishes = prevFinishes;
-            selectedBodies = prevBodies;
-            applyVisibility();
-
+            setGrade(prevGrade); selectedSizes = prevSizes; selectedFinishes = prevFinishes; selectedBodies = prevBodies; applyVisibility();
             exportBtn.innerText = "DONE ✓";
-            setTimeout(() => {
-                exportBtn.innerText = originalText;
-                exportBtn.style.pointerEvents = 'auto';
-                bulkSelectedSizes.clear(); 
-                renderBulkList();
-            }, 2000);
+            setTimeout(() => { exportBtn.innerText = originalText; exportBtn.style.pointerEvents = 'auto'; bulkSelectedSizes.clear(); renderBulkList(); }, 2000);
         }
     </script>
 </body>
